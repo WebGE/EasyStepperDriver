@@ -85,6 +85,32 @@
 </li>
 </ul><h3>
 <a name="classe-easystepperdriver" class="anchor" href="#classe-easystepperdriver"><span class="octicon octicon-link"></span></a>Classe EasyStepperDriver</h3>
+<hr><p><strong>Constructeur</strong></p>
+
+<table>
+<tr>
+<td></td>
+<td><strong>Syntaxe</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
+<td><strong>MotorControlMD2x()</strong></td>
+<td>Initialise un objet "carte MD23/MD25". <br> L'addresse sur le bus I2C = 0x58. La fréquence de l'horloge est fixée à F = 100kHz </td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
+<td>
+<strong>MotorControlMD2x</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>)</td>
+<td>Initialise un objet "carte MD23/MD25". I2C_Add_7bits est à définir dans l'intervalle [0x58,0x5F]. La fréquence de l'horloge est fixée à F = 100kHz.</td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
+<td>
+<strong>MotorControlMD2x</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>, <strong>UInt16</strong> <em>Frequency</em>)</td>
+<td>Initialise un objet "carte MD23/MD25" I2C_Add_7bits est à définir dans l'intervalle [0x58,0x5F]. Frequency est à définir dans l'intervalle [100kHz,400kHz] </td>
+</tr>
+</table>     
       </section>
     </div>
 
