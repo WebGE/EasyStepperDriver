@@ -95,12 +95,12 @@
 </tr>
 <tr>
 <td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
-<td><strong>EasyStepperDriver</strong>(<strong>Pins</strong> <em>DirectionPin</em>,<strong>Pins</strong> <em>StepPin</em>, <strong>Pins</strong> <em>SleepPin</em>)</td>
+<td><strong>EasyStepperDriver</strong>(<strong>Pins</strong> <em>DirectionPin</em>, <strong>Pins</strong> <em>StepPin</em>, <strong>Pins</strong> <em>SleepPin</em>)</td>
 <td>Initialise un objet "Carte EasyDriver". <br>
 <ul>
-  <li><strong>Direction</strong>: PinDio de la carte NetDuino associée à la broche <strong>DIR</strong> de la carte EasyDriver</li>
-  <li><strong>StepPin</strong>: Dio de la carte NetDuino associée à la broche <strong>STEP</strong> de la carte EasyDriver </li>
-  <li><strong>SleepPin</strong>: Dio de la carte NetDuino associée à la broche <strong>SLP</strong> de la carte EasyDriver</li>
+  <li><strong>DirectionPin</strong>: Digital I/O de la carte Netduino associée à la broche <strong>DIR</strong> de la carte EasyDriver</li>
+  <li><strong>StepPin</strong>: Digital I/O de la carte Netduino associée à la broche <strong>STEP</strong> de la carte EasyDriver </li>
+  <li><strong>SleepPin</strong>: Digital I/O de la carte Netduino associée à la broche <strong>SLP</strong> de la carte EasyDriver</li>
 </ul>
 </ul>
 </td>
@@ -108,14 +108,16 @@
 <tr>
 <td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
 <td>
-<strong>MotorControlMD2x</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>)</td>
-<td>Initialise un objet "carte MD23/MD25". I2C_Add_7bits est à définir dans l'intervalle [0x58,0x5F]. La fréquence de l'horloge est fixée à F = 100kHz.</td>
-</tr>
-<tr>
-<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
-<td>
-<strong>MotorControlMD2x</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>, <strong>UInt16</strong> <em>Frequency</em>)</td>
-<td>Initialise un objet "carte MD23/MD25" I2C_Add_7bits est à définir dans l'intervalle [0x58,0x5F]. Frequency est à définir dans l'intervalle [100kHz,400kHz] </td>
+<strong>EasyStepperDriver</strong>(<strong>Pins</strong> <em>DirectionPin</em>, <strong>Pins</strong> <em>StepPin</em>, <strong>Pins</strong> <em>SleepPin</em>, <strong>Pins</strong> <em>StepModePinOne</em>, <strong>Pins</strong> <em>StepModePinTwo</em>)</td>
+<td>Initialise un objet "Carte EasyDriver". <br>
+<ul>
+  <li><strong>DirectionPin</strong>: Digital I/O de la carte Netduino associée à la broche <strong>DIR</strong> de la carte EasyDriver</li>
+  <li><strong>StepPin</strong>: Digital I/O de la carte Netduino associée à la broche <strong>STEP</strong> de la carte EasyDriver </li>
+  <li><strong>SleepPin</strong>: Digital I/O de la carte Netduino associée à la broche <strong>SLP</strong> de la carte EasyDriver</li>
+  <li><strong>StepModePinOne</strong>: Digital I/O de la carte Netduino associée à la broche <strong>MS1</strong></strong> de la carte EasyDriver </li>
+  <li><strong>SleepModePinTwo</strong>: Digital I/O de la carte Netduino associée à la broche <strong>MS2</strong> de la carte EasyDriver</li>
+</ul>  
+</td>
 </tr>
 </table>     
       </section>
