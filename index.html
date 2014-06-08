@@ -153,7 +153,7 @@
 	  <td><strong>Description</strong></td>
 	</tr>
 	<tr>
-	  <td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png" width="120%" height="120%"></td>
+	  <td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
 	  <td><strong>StepDelay</strong></td>
 	  <td>Retourne la durée d'un pas en ms</td>
 	</tr>
@@ -180,6 +180,32 @@
 	  <td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
 	  <td><strong>Steps</strong></td>
 	  <td>Retourne le nombre de pas que le moteur doit effectuer</td>
+	</tr>
+</table>
+<p><strong>Méthodes publiques</strong></p>
+<table>
+	<tr>
+		<td></td>
+		<td><strong>Syntaxe</strong></td>
+		<td><strong>Description</strong></td>
+	</tr>
+	<tr>
+		<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
+		<td><strong>void GoStep</strong>(<strong>UInt32</strong> <em>steps</em>, <strong>Mode</strong> mode, <strong>direction</strong> direction, <strong>int</strong> <em>delay=2</em>)</td>
+		<td>Commande du moteur pas à pas:
+			<strong>steps: </strong>Nombre de pas à effectuer<br/>
+			<strong>mode: </strong>Mode de fonctionnement (Full, Half, Quarter, OneEighth)<br/>
+			<strong>direction: </strong><br/>
+			<strong>delay: </strong> durée d'un pas (2ms par défaut)
+		</td>
+	</tr>
+	<tr>
+		<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
+		<td><strong>bool Sleep(bool sleep)</strong></td>
+		<td>
+		<strong>sleep = true: </strong>désactivation de la carte<br/>
+		<strong>sleep = false: </strong> activation de la carte
+		</td>
 	</tr>
 </table>
 		</section>
