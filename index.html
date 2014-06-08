@@ -191,7 +191,7 @@
 	</tr>
 	<tr>
 		<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
-		<td><strong>void GoStep</strong>(<strong>UInt32</strong> <em>steps</em>, <strong>Mode</strong> mode, <strong>direction</strong> direction, <strong>int</strong> <em>delay=2</em>)</td>
+		<td><strong>void GoStep</strong>(<strong>UInt32</strong> <em>steps</em>, <strong>Mode</strong> <em>mode</em>, <strong>direction</strong> <em>direction</em>, <strong>int</strong> <em>delay=2</em>)</td>
 		<td>Commande du moteur pas à pas:<br/>
 			<strong>steps: </strong>Nombre de pas à effectuer<br/>
 			<strong>mode: </strong>Mode de fonctionnement (Full, Half, Quarter, OneEighth)<br/>
@@ -201,10 +201,10 @@
 	</tr>
 	<tr>
 		<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
-		<td><strong>bool Sleep(bool sleep)</strong></td>
-		<td>
-		<strong>sleep = true: </strong>désactivation de la carte<br/>
-		<strong>sleep = false: </strong> activation de la carte
+		<td><strong>bool Sleep</strong>(<strong>bool</strong> <em>sleep</em>)</td>
+		<td>Réduit la consommation de la carte en désactivant la logique de contrôle et les sorties (A utiliser en l'absence de commande du moteur)<br/>
+		<strong>sleep = true: </strong>mode sommeil actif <br/>
+		<strong>sleep = false: </strong> mode sommeil inactif
 		</td>
 	</tr>
 </table>
