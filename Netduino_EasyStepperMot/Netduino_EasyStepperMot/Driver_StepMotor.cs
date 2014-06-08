@@ -116,9 +116,9 @@ namespace Stepper_Test
         /// </summary>
         /// <param name="Steps">indicate the amount of steps that need to be moved</param>
         /// <param name="Delay">duration between steps</param>
-        public void GoStep(UInt32 steps, Mode mode, Direction direction, UInt16 Delay=2)
+        public void GoStep(UInt32 steps, Mode mode, Direction direction, UInt16 delay=2)
         {            
-            _StepMode = mode; _StepDirection = direction; _StepDelay = Delay; _Steps = steps;
+            _StepMode = mode; _StepDirection = direction; _StepDelay = delay; _Steps = steps;
             ChangeStepMode(mode);
             ChangeDirection(direction);
             for (UInt32 i = 0; i < _Steps; i++)
