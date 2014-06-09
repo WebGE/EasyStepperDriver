@@ -90,6 +90,18 @@
 </ul><h3><hr>
 <a name="classe-easystepperdriver" class="anchor" href="#classe-easystepperdriver"><span class="octicon octicon-link"></span></a>Classe EasyStepperDriver</h3>
 <hr>
+<p><strong>Utilisation</strong></p>
+<hr>
+<ol>
+	<li>Selon le besoin, la carte peut être contrôlée à l'aide de 2, 3, 5 ou 6 des sorties numérique de la Netduino.<br>
+	Créer un objet EasyStepperDriver en utilisant le constructeur approprié.</li>
+	<li>Activer la carte avec la methode <strong>WakeUp</strong>. (Utiliser éventuellement <strong>Sleep</strong> pour réduire la consommation de la carte</li>
+	<li>Commander le moteur en rotation avec la méthode <strong>Turn</strong></li>
+	<li>Désactiver la commande du moteur à l'arrêt (si possible) avec la méthode <strong>DisableOutput</strong> pour limiter son échauffement<br>
+	Ne pas oublier de réactiver les sorties avec <strong>EnableOutputs</strong>.	
+	</li>
+</ol>
+<hr>
 <p><strong>Constructeur</strong></p>
 <table>
 	<tr>
