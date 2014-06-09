@@ -9,6 +9,7 @@ namespace Stepper_Test
     public class EasyStepperDriver
     {
         private OutputPort _SleepPin;
+        private OutputPort _EnablePin;
         private OutputPort _DirectionPin;
         private OutputPort _StepPin;
         private OutputPort _StepModePinOne;
@@ -18,6 +19,12 @@ namespace Stepper_Test
         private Mode _StepMode = Mode.Full;
         private Direction _StepDirection = Direction.Forward;
 
+
+      // Properties
+      // ------------------------------------------------------
+        /// <summary>
+        /// Get Steps
+        /// </summary>
         public UInt32 Steps
         {
             get
@@ -25,8 +32,9 @@ namespace Stepper_Test
                 return _Steps;
             }
         }
+
         /// <summary>
-        /// Get or set direction
+        /// Get direction
         /// </summary>      
         public Direction StepDirection 
         {
@@ -35,8 +43,9 @@ namespace Stepper_Test
                 return _StepDirection; 
             }
         }
+
         /// <summary>
-        /// Get or set Mode
+        /// Get Mode
         /// </summary>
         public Mode StepMode 
         {
@@ -45,8 +54,9 @@ namespace Stepper_Test
                return _StepMode;
             }
         }
+
         /// <summary>
-        /// Get or set time between two step
+        /// Get time between two step
         /// </summary>
         public int StepDelay
         {
@@ -57,68 +67,161 @@ namespace Stepper_Test
         }
 
         /// <summary>
+        /// Get if Sleep or not
+        /// </summary>
+        public bool IsDriverSleep
+        {
+            get
+            {
+                return !_SleepPin.Read();
+            }
+        }
+
+        /// <summary>
+        /// Get if Enable or Disable
+        /// </summary>
+        public bool IsOutputsEnable
+        {
+            get
+            {
+                return !_EnablePin.Read();
+            }
+        }
+
+
+     // Constructors
+     // ------------------------------------------------------
+        /// <summary>
         /// Creates an instance of the driver, that only lets you move and choose direction.
         /// </summary>
-        /// <param name="DirectionPin">a digital pint that is used for direction</param>
-        /// <param name="StepPin">a digital pint that is used for steps</param>
+        /// <param name="DirectionPin">Control EasyDriver DIR: a digital pin used for direction</param>
+        /// <param name="StepPin">Control EasyDriver STEP: a digital pin used for steps</param>
         public EasyStepperDriver(Cpu.Pin DirectionPin, Cpu.Pin StepPin)
         {
-            _DirectionPin = new OutputPort(DirectionPin, true);
+            _DirectionPin = new OutputPort(DirectionPin, true);  // Forward
             _StepPin = new OutputPort(StepPin, false);
         }
+
         /// <summary>
         /// Creates an instance of the driver, that only lets you move, choose direction and put the controller to sleep
         /// </summary>
-        /// <param name="DirectionPin">a digital pint that is used for direction</param>
-        /// <param name="StepPin">a digital pint that is used for steps</param>
-        /// <param name="SleepPin">a digital pint that is used for sleep function</param>
+        /// <param name="DirectionPin">Control EasyDriver DIR: a digital pin used for direction</param>
+        /// <param name="StepPin">Control EasyDriver STEP: a digital pin used for steps</param>
+        /// <param name="SleepPin">Control EasyDriver SLP: a digital pin used for sleep function (disable par default)</param>
         public EasyStepperDriver(Cpu.Pin DirectionPin, Cpu.Pin StepPin, Cpu.Pin SleepPin)
         {
-            _DirectionPin = new OutputPort(DirectionPin, false);
+            _DirectionPin = new OutputPort(DirectionPin, false); // Forward
             _StepPin = new OutputPort(StepPin, false);
-            _SleepPin = new OutputPort(SleepPin, false);
+            _SleepPin = new OutputPort(SleepPin, false); // Sleep activé
         }
+
         /// <summary>
         /// Creates an instance of the driver, that only lets you move, choose direction, sleep, and select step mode
         /// </summary>
-        /// <param name="DirectionPin">a digital pint that is used for direction</param>
-        /// <param name="StepPin">a digital pint that is used for steps</param>
-        /// <param name="SleepPin">a digital pint that is used for sleep function</param>
-        /// <param name="StepModePinOne">pin one used to change step mode</param>
-        /// <param name="StepModePinTwo">pin two used to change step mode</param>
+        /// <param name="DirectionPin">Control EasyDriver DIR PIN: a digital pin used for direction</param>
+        /// <param name="StepPin">Control EasyDriver STEP: a digital pin used for steps</param>
+        /// <param name="SleepPin">Control EasyDriver SLP: a digital pin used for sleep function (disable par default)</param>
+        /// <param name="StepModePinOne">Control EasyDriver MS1: a digital pin used for control mode</param>
+        /// <param name="StepModePinTwo">Control EasyDriver MS2: a digital pin used for control mode</param>
         public EasyStepperDriver(Cpu.Pin DirectionPin, Cpu.Pin StepPin, Cpu.Pin SleepPin, Cpu.Pin StepModePinOne, Cpu.Pin StepModePinTwo)
         {
-            _DirectionPin = new OutputPort(DirectionPin, false);
+            _DirectionPin = new OutputPort(DirectionPin, false); // Forward
             _StepPin = new OutputPort(StepPin, false);
-            _SleepPin = new OutputPort(SleepPin, false);
-            _StepModePinOne = new OutputPort(StepModePinOne, true);
+            _SleepPin = new OutputPort(SleepPin, false); // Sleep acivé
+            _StepModePinOne = new OutputPort(StepModePinOne, true); // Huitième de pas
             _StepModePinTwo = new OutputPort(StepModePinTwo, true);
         }
 
         /// <summary>
-        /// Put the stepper driver to sleep
+        /// Creates an instance of the driver, that only lets you move, choose direction, sleep, select step mode and enable / disable card
         /// </summary>
-        /// <param name="sleep"></param>
+        /// <param name="DirectionPin">Control EasyDriver DIR PIN: a digital pin used for direction</param>
+        /// <param name="StepPin">Control EasyDriver STEP: a digital pin used for steps</param>
+        /// <param name="SleepPin">Control EasyDriver SLP: a digital pin used for sleep function (disable par default)</param>
+        /// <param name="StepModePinOne">Control EasyDriver MS1: a digital pin used for control mode</param>
+        /// <param name="StepModePinTwo">Control EasyDriver MS2: a digital pin used for control mode</param>
+        /// <param name="EnablePin">Control EasyDriver ENABLE: a digital pin used for Enable function</param>
+        public EasyStepperDriver(Cpu.Pin DirectionPin, Cpu.Pin StepPin, Cpu.Pin SleepPin, Cpu.Pin StepModePinOne, Cpu.Pin StepModePinTwo, Cpu.Pin EnablePin)
+        {
+            _DirectionPin = new OutputPort(DirectionPin, false); // Forward
+            _StepPin = new OutputPort(StepPin, false);
+            _SleepPin = new OutputPort(SleepPin, false); // Sleep activé
+            _StepModePinOne = new OutputPort(StepModePinOne, true); // Huitième de pas
+            _StepModePinTwo = new OutputPort(StepModePinTwo, true);
+            _EnablePin = new OutputPort(EnablePin, false); // Activation des sorties
+        }
+
+
+     // Public methodes
+     // ------------------------------------------------------
+        /// <summary>
+        /// Put the stepper driver to sleep mode
+        /// </summary>
         /// <returns></returns>
-        public bool Sleep(bool sleep)
+        public bool Sleep()
         {
             if (_SleepPin != null)
             {
-                _SleepPin.Write(!sleep);
+                _SleepPin.Write(false);
                 return true;
             }
             else
                 return false;
         }
-        
+
+        /// <summary>
+        /// Wake up the stepper driver
+        /// </summary>
+        /// <returns></returns>
+        public bool WakeUp()
+        {
+            if (_SleepPin != null)
+            {
+                _SleepPin.Write(true);
+                return true;
+            }
+            else
+                return false;
+        }
+
+        /// <summary>
+        /// Enable the stepper driver outputs
+        /// </summary>
+        /// <returns></returns>
+        public bool EnableOutputs()
+        {
+            if (_EnablePin != null)
+            {
+                _EnablePin.Write(false);
+                return true;
+            }
+            else
+                return false;
+        }
+
+        /// <summary>
+        /// Disable the stepper driver outputs
+        /// </summary>
+        /// <returns></returns>
+        public bool DisableOutputs()
+        {
+            if (_EnablePin != null)
+            {
+                _EnablePin.Write(true);
+                return true;
+            }
+            else
+                return false;
+        }
+
         /// <summary>
         /// Moves the stepper motor
         /// </summary>
         /// <param name="Steps">indicate the amount of steps that need to be moved</param>
         /// <param name="Delay">duration between steps</param>
-        public void GoStep(UInt32 Steps, Mode mode, Direction direction, int Delay=2)
+        public void Turn(UInt32 steps, Direction direction, int stepdelay = 2, Mode mode = Mode.OneEighth)
         {            
-            _StepMode = mode; _StepDirection = direction; _StepDelay = Delay; _Steps = Steps;
+            _StepMode = mode; _StepDirection = direction; _StepDelay = stepdelay; _Steps = steps;
             ChangeStepMode(mode);
             ChangeDirection(direction);
             for (UInt32 i = 0; i < _Steps; i++)
@@ -128,8 +231,10 @@ namespace Stepper_Test
                 _StepPin.Write(false);
             }
         }
- 
-         /// <summary>
+
+    // Private methodes
+    // ------------------------------------------------------
+        /// <summary>
          /// Set Direction pin
          /// </summary>
          /// <param name="dir"></param>
@@ -176,6 +281,9 @@ namespace Stepper_Test
                 }
             }
         }
+
+    // Enumerations
+    // ------------------------------------------------------
         /// <summary>
         /// Directions are Forward or Backward
         /// </summary>
@@ -184,7 +292,6 @@ namespace Stepper_Test
             Forward,
             Backward
         }
-
         /// <summary>
         /// Modes are Full, Half, Quarter, OneEighth
         /// </summary> 
