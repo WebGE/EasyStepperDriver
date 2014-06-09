@@ -240,31 +240,25 @@
 	</tr>
 	<tr>
 		<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
-		<td><strong>bool DisableOutputs()</strong>()</td>
-		<td>Désactivation des sorties de la carte EasyDriver.<br/> Renvoi un booléen attestant de l'opération.
-		(Un constructeur doit être appelé avant d'utiliser cette méthode)</td>
+		<td><strong>bool DisableOutputs</strong>()</td>
+		<td><strong>Désactivation</strong> des sorties A et B de la carte EasyDriver.<br/> Renvoi un booléen attestant de l'opération.
+		(La broche Enable doit être initialisée à l'aide d'un constructeur avant d'utiliser cette méthode)</td>
 	</tr>
 	<tr>
 		<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
-		<td><strong>bool EnableOutputs()</strong>()</td>
+		<td><strong>bool EnableOutputs</strong>()</td>
 		<td>Activation des sorties de la carte EasyDriver.<br/> Renvoi un booléen attestant de l'opération.
-		(Un constructeur doit être appelé avant d'utiliser cette méthode)</td>
+		(La broche Enable doit être initialisée à l'aide d'un constructeur avant d'utiliser cette méthode)</td>
 	</tr>
 	<tr>
 		<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
-		<td><strong>bool Sleep()</strong>()</td>
+		<td><strong>bool Sleep</strong>()</td>
 		<td>Désactivation de la logique de commande et des sorties de la carte EasyDriver.<br/> Renvoi un booléen attestant de l'opération.
-		(Un constructeur doit être appelé avant d'utiliser cette méthode)<br/><strong>Mode activé par défaut</strong></td>
+		(La broche SLP doit être initialisée à l'aide d'un constructeur avant d'utiliser cette méthode)<br/><strong>Mode activé par défaut</strong></td>
 	</tr>
 	<tr>
 		<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
-		<td><strong>bool WakeUp()</strong>()</td>
-		<td>Acctivation de la logique de commande et des sorties de la carte EasyDriver.<br/> Renvoi un booléen attestant de l'opération.
-		(Un constructeur doit être appelé avant d'utiliser cette méthode)</td>
-	</tr>
-	<tr>
-		<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
-		<td><strong>void Turn</strong>(<strong>UInt32</strong> <em>steps</em>, <strong>Mode</strong> <em>mode</em>, <strong>direction</strong> <em>direction</em>, <strong>int</strong> <em>delay=2</em>)</td>
+		<td><strong>void Turn</strong>(<strong>UInt32</strong> <em>steps</em>, <strong>Mode</strong> <em>mode</em>, <strong>direction</strong> <em>direction</em>, <strong>int</strong> <em>[delay=2]</em>)</td>
 		<td>Commande du moteur pas à pas:<br/>
 			<strong>steps: </strong>Nombre de pas à effectuer<br/>
 			<strong>mode: </strong>Mode de fonctionnement (Full, Half, Quarter, OneEighth)<br/>
@@ -274,11 +268,9 @@
 	</tr>
 	<tr>
 		<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
-		<td><strong>bool Sleep</strong>(<strong>bool</strong> <em>sleep</em>)</td>
-		<td>Réduit la consommation de la carte en désactivant la logique de contrôle et les sorties <br/>
-		<strong>sleep = true: </strong>mode sommeil actif <br/>
-		<strong>sleep = false: </strong> mode sommeil inactif (WakeUp) (<strong>mode par défaut</strong>)
-		</td>
+		<td><strong>bool WakeUp</strong>()</td>
+		<td>Acctivation de la logique de commande et des sorties de la carte EasyDriver.<br/> Renvoi un booléen attestant de l'opération.
+		(La broche SLP doit être initialisée à l'aide d'un constructeur avant d'utiliser cette méthode)</td>
 	</tr>
 </table>
 		</section>
