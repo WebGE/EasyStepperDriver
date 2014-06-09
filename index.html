@@ -95,6 +95,16 @@
 	</tr>
 	<tr>
 		<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
+		<td><strong>EasyStepperDriver</strong>(<strong>Pins</strong> <em>DirectionPin</em>, <strong>Pins</strong> <em>StepPin</em>)</td>
+		<td>Initialise un objet "Carte EasyDriver". <br>
+		<ul>
+		  <li><strong>DirectionPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>DIR</strong> de la carte EasyDriver</li>
+		  <li><strong>StepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>STEP</strong> de la carte EasyDriver</li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
 		<td><strong>EasyStepperDriver</strong>(<strong>Pins</strong> <em>DirectionPin</em>, <strong>Pins</strong> <em>StepPin</em>, <strong>Pins</strong> <em>SleepPin</em>)</td>
 		<td>Initialise un objet "Carte EasyDriver". <br>
 		<ul>
@@ -191,7 +201,7 @@
 	</tr>
 	<tr>
 		<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
-		<td><strong>void GoStep</strong>(<strong>UInt32</strong> <em>steps</em>, <strong>Mode</strong> <em>mode</em>, <strong>direction</strong> <em>direction</em>, <strong>int</strong> <em>delay=2</em>)</td>
+		<td><strong>void Turn</strong>(<strong>UInt32</strong> <em>steps</em>, <strong>Mode</strong> <em>mode</em>, <strong>direction</strong> <em>direction</em>, <strong>int</strong> <em>delay=2</em>)</td>
 		<td>Commande du moteur pas à pas:<br/>
 			<strong>steps: </strong>Nombre de pas à effectuer<br/>
 			<strong>mode: </strong>Mode de fonctionnement (Full, Half, Quarter, OneEighth)<br/>
