@@ -105,6 +105,7 @@
 		  <li><strong>DirectionPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>DIR</strong> de la carte EasyDriver</li>
 		  <li><strong>StepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>STEP</strong> de la carte EasyDriver</li>
 		</ul>
+		<p><strong>Configuration par défaut: </strong>Forward, mode huitième de pas</p>
 		</td>
 	</tr>
 	<tr>
@@ -116,6 +117,7 @@
 		  <li><strong>StepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>STEP</strong> de la carte EasyDriver </li>
 		  <li><strong>SleepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>SLP</strong> de la carte EasyDriver (fonction Sleep désactivée par défaut)</li>
 		</ul>
+		<p><strong>Configuration par défaut: </strong>Forward, Sleep désactivé, mode huitième de pas</p>
 		</td>
 	</tr>
 	<tr>
@@ -129,7 +131,8 @@
 	  <li><strong>SleepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>SLP</strong> de la carte EasyDriver (fonction Sleep désactivée par défaut)</li>
 	  <li><strong>StepModePinOne</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>MS1</strong></strong> de la carte EasyDriver </li>
 	  <li><strong>SleepModePinTwo</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>MS2</strong> de la carte EasyDriver</li>
-	</ul>  
+	</ul>
+	<p><strong>Configuration par défaut: </strong>Forward, Sleep désactivé, mode huitième de pas</p>
 	</td>
 	</tr>
 </table> 
@@ -165,6 +168,22 @@
 	  <td></td>
 	  <td><strong>Syntaxe</strong></td>
 	  <td><strong>Description</strong></td>
+	</tr>
+	<tr>
+	  <td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+	  <td><strong>IsDriverSleep</strong></td>
+	  <td>Retourne :<br/>
+	  	<strong>False</strong> si la logique et les sorties sont activées<br/>
+	  	<strong>True</strong> si la logique et les sorties sont désactivées<br/>
+	  </td>
+	</tr>
+	<tr>
+	  <td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+	  <td><strong>IsOutputsEnable</strong></td>
+	  <td>Retourne :<br/>
+	  	<strong>True</strong> si les sorties sont activées<br/>
+	  	<strong>False</strong> si les sorties sont désactivées<br/>
+	  </td>
 	</tr>
 	<tr>
 	  <td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
@@ -216,9 +235,9 @@
 	<tr>
 		<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
 		<td><strong>bool Sleep</strong>(<strong>bool</strong> <em>sleep</em>)</td>
-		<td>Réduit la consommation de la carte en désactivant la logique de contrôle et les sorties (A utiliser en l'absence de commande du moteur)<br/>
+		<td>Réduit la consommation de la carte en désactivant la logique de contrôle et les sorties <br/>
 		<strong>sleep = true: </strong>mode sommeil actif <br/>
-		<strong>sleep = false: </strong> mode sommeil inactif (<strong>mode par défaut</strong>)
+		<strong>sleep = false: </strong> mode sommeil inactif (WakeUp) (<strong>mode par défaut</strong>)
 		</td>
 	</tr>
 </table>
