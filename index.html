@@ -19,7 +19,7 @@
           <a id="forkme_banner" href="https://github.com/WebGE/EasyDriverStepperMotor">View on GitHub</a>
 
           <h1 id="project_title">Contrôler un moteur pas à pas avec une carte EasyDriver 4.4</h1>
-          <h2 id="project_tagline">Programme de test en C# et description de la classe EasyStepperDriver</h2>
+          <h2 id="project_tagline">Programme de test en C# et description de la classe EasyStepperDriver destinés à une Netduino+2</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/WebGE/EasyDriverStepperMotor/zipball/master">Download this project as a .zip file</a>
@@ -31,65 +31,54 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3><hr>
-<a name="carte-easydriver-44" class="anchor" href="#carte-easydriver-44"><span class="octicon octicon-link"></span></a>Carte EasyDriver 4.4 </h3><h5>Spark Fun Electronics</h5><hr>
-
-<p>Cette carte de commande permet de contrôler facilement un <strong>moteur pas-à-pas bipolaire</strong> jusqu'à 750 mA par phase. Elle fonctionne par défaut avec 8 micro-pas.</p>
-
-<p>Elle est basée sur le circuit <a href="https://www.sparkfun.com/datasheets/Robotics/A3967.pdf" target="_blank">Allegro A3967</a> et permet de contrôler un moteur pas-à-pas (par ex: <a href="http://astrojbm.free.fr/bricolages/picastro/Mecanique/ITC_CNC_1_FR.pdf" target="_blank">ITC-VNC-1</a>) très facilement à partir d'un microcontrôleur (deux broches pour le mode, une broche pour la direction et une pour la vitesse). Le module permet de fonctionner en mode pas complet, demi-pas, quart de pas ou 1/8 de pas (mode par défaut).</p>
-
-<p><img src="http://www.gotronic.fr/ar-commande-de-pas-a-pas-easydriver-4-4-19029.jpg" alt=""></p>
-
+<hr/>
+<h3><a name="carte-easydriver-44" class="anchor" href="#carte-easydriver-44"><span class="octicon octicon-link"></span></a>Carte EasyDriver 4.4 </h3><h5>Spark Fun Electronics</h5><hr>
 <ul>
-<li>
-<strong>Alimentation</strong>: 7 à 30 Vcc maxi</li>
-<li>
-<strong>Commande</strong>: via un microcontrôleur 0 - 5 Vcc (mode, direction et vitesse)</li>
-<li>
-<strong>Sortie</strong>: 150 à 750 mA maxi par phase</li>
-<li>
-<strong>Dimensions</strong>: 48 x 21 x 18 mm</li>
-<li>
-<strong>Schéma: </strong>: <a href="http://schmalzhaus.com/EasyDriver/EasyDriver_v44/EasyDriver_v44_sch.pdf" target="_blank">EasyDriver v4.4</a></li>
-<li>
-<strong>Fiche technique: </strong>: <a href="http://schmalzhaus.com/EasyDriver/" target="_blank">EasyDriver Stepper Motor Driver</a></li>
-<li>
-<strong>Distributeur</strong>: <a href="http://www.gotronic.fr/art-commande-de-pas-a-pas-easydriver-4-4-19029.htm" target="_blank">GOTRONIC</a>
-</li>
-</ul><h3><hr>
-<a name="carte-netduino-de-secret-labs" class="anchor" href="#carte-netduino-de-secret-labs" target="_blank"><span class="octicon octicon-link"></span></a>Carte NetDuino plus 2 </h3><h5>Secret Labs</h5>
-<hr>
+	<li><strong>Présentation</strong></li>
+		<p>Cette carte de commande permet de contrôler facilement un <strong>moteur pas-à-pas bipolaire</strong> jusqu'à 750 mA par phase. Elle fonctionne par défaut avec 8 micro-pas.</p>
+		<p>Elle est basée sur le circuit <a href="https://www.sparkfun.com/datasheets/Robotics/A3967.pdf" target="_blank">Allegro A3967</a> et permet de contrôler un moteur pas-à-pas
+		 (par ex: <a href="http://astrojbm.free.fr/bricolages/picastro/Mecanique/ITC_CNC_1_FR.pdf" target="_blank">ITC-VNC-1</a>) très facilement à partir d'un microcontrôleur
+		 (deux broches pour le mode, une broche pour la direction et une pour la vitesse). Le module permet de fonctionner en mode pas complet, demi-pas, quart de pas ou 1/8 de pas (mode par défaut).</p>
+		<p align="center"><img src="http://www.gotronic.fr/ar-commande-de-pas-a-pas-easydriver-4-4-19029.jpg" alt=""></p>
+	<li><strong>Alimentation</strong>: 7 à 30 Vcc maxi</li>
+	<li><strong>Commande</strong>: via un microcontrôleur 0 - 5 Vcc (mode, direction et vitesse)</li>
+	<li><strong>Sortie</strong>: 150 à 750 mA maxi par phase</li>
+	<li><strong>Dimensions</strong>: 48 x 21 x 18 mm</li>
+	<li><strong>Schéma: </strong>: <a href="http://schmalzhaus.com/EasyDriver/EasyDriver_v44/EasyDriver_v44_sch.pdf" target="_blank">EasyDriver v4.4</a></li>
+	<li><strong>Fiche technique: </strong>: <a href="http://schmalzhaus.com/EasyDriver/" target="_blank">EasyDriver Stepper Motor Driver</a></li>
+	<li><strong>Distributeur</strong>: <a href="http://www.gotronic.fr/art-commande-de-pas-a-pas-easydriver-4-4-19029.htm" target="_blank">GOTRONIC</a></li>
+</ul>
+<hr/>
+<h3><a name="carte-netduino-de-secret-labs" class="anchor" href="#carte-netduino-de-secret-labs" target="_blank"><span class="octicon octicon-link"></span></a>Carte NetDuino plus 2 </h3><h5>Secret Labs</h5>
+<hr/>
 <ul>
-<li>
-<strong>Microcontrôleur</strong> : STM32F405RG 32 bits à architecture Cortex-M4 cadencé à 168 MHz.</li>
-<li>
-<strong>RAM</strong> : 100 KB.</li>
-<li>
-<strong>Flash</strong> : 384 KB.</li>
-<li>
-<strong>Port Ethernet</strong> 10Mbps.</li>
-<li>
-<strong>E/S numériques</strong> : 14</li>
-<li>
-<strong>Entrées analogiques</strong> : 6</li>
-<li>
-<strong>IDE</strong> : Microsoft Visual Studio (professionnel ou express)</li>
-<li>
-<strong>Framework</strong> : .NETMF</li>
-<li>
-<strong>Langage de programmation</strong> : C#</li>
-</ul><p><img src="http://cdn.netduino.com/images/hardware/netduino2/photo_overhead.gif" alt="Netduino+ 2"></p>
-
+	<li><strong>Microcontrôleur</strong> : STM32F405RG 32 bits à architecture Cortex-M4 cadencé à 168 MHz.</li>
+	<li><strong>RAM</strong> : 100 KB.</li>
+	<li><strong>Flash</strong> : 384 KB.</li>
+	<li><strong>Port Ethernet</strong> 10Mbps.</li>
+	<li><strong>E/S numériques</strong> : 14</li>
+	<li><strong>Entrées analogiques</strong> : 6</li>
+	<li><strong>IDE</strong> : Microsoft Visual Studio (professionnel ou express)</li>
+	<li><strong>Framework</strong> : .NETMF</li>
+	<li><strong>Langage de programmation</strong> : C#</li>
+</ul>
+<p align="center"><img src="http://cdn.netduino.com/images/hardware/netduino2/photo_overhead.gif" alt="Netduino+ 2"></p>
 <ul>
-<li>
-<strong>Site</strong>: <a href="http://netduino.com/netduinoplus2/specs.htm" target="_blank">Netduino</a>
-</li>
-<li>
-<strong>Distributeur</strong> : <a href="http://www.lextronic.fr/recherche.html?mots_cles=PRODUIT-ID29733" target="_blank">Lextronic</a>
-</li>
-</ul><h3><hr>
-<a name="classe-easystepperdriver" class="anchor" href="#classe-easystepperdriver"><span class="octicon octicon-link"></span></a>Classe EasyStepperDriver</h3>
-<hr>
+	<li><strong>Site</strong>: <a href="http://netduino.com/netduinoplus2/specs.htm" target="_blank">Netduino</a></li>
+	<li><strong>Distributeur</strong> : <a href="http://www.lextronic.fr/recherche.html?mots_cles=PRODUIT-ID29733" target="_blank">Lextronic</a></li>
+</ul>
+<hr/>
+<h3><a name="classe-easystepperdriver" class="anchor" href="#classe-easystepperdriver"><span class="octicon octicon-link"></span></a>Classe EasyStepperDriver</h3>
+<hr/>
+<p><strong>Contenu du dossier à télécharger</strong></p>
+<hr/>
+<p> Le dossier à télécharger (au format zip ou tar.gz) contient le répertoire d'un projet <strong>Microsoft Visual Studio Professionnel</strong> composé : </p>
+<ul>
+	<li>Du code de la classe <em>EasyStepperDriver</em>.</li>
+	<li>D'un exemple d'utilisation de cette classe.</li>
+</ul>
+<p> Les fichiers program.cs et EasyStepperDriver.cs pourront être recompilés avec <strong>Microsoft Visual Studio Express</strong>.</p>
+<hr/>
 <p><strong>Utilisation</strong></p>
 <hr>
 <ol>
