@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Threading;
 using Microsoft.SPOT;
-using Microsoft.SPOT.Hardware;
-using SecretLabs.NETMF.Hardware.Netduino;
-using Stepper_Test;
+using SecretLabs.NETMF.Hardware.NetduinoPlus;
+using ToolBoxes;
 
-namespace Netduino_EasyStepperMot
+namespace TestNetduinoStepper
 { // Description de la classe EasyStepperDriver : http://webge.github.io/EasyDriverStepperMotor/
     public class Program
     {
