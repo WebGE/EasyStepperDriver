@@ -1,0 +1,16 @@
+C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\EasyStepperDriver\bin\Debug\le\EasyStepperDriver.dll
+C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\EasyStepperDriver\bin\Debug\be\EasyStepperDriver.dll
+C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\EasyStepperDriver\bin\Debug\le\EasyStepperDriver.pdb
+C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\EasyStepperDriver\bin\Debug\be\EasyStepperDriver.pdb
+C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\EasyStepperDriver\bin\Debug\EasyStepperDriver.dll
+C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\EasyStepperDriver\bin\Debug\EasyStepperDriver.pdb
+C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\EasyStepperDriver\bin\Debug\le\EasyStepperDriver.pe
+C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\EasyStepperDriver\bin\Debug\le\EasyStepperDriver.pdbx
+C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\EasyStepperDriver\bin\Debug\be\EasyStepperDriver.pe
+C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\EasyStepperDriver\bin\Debug\be\EasyStepperDriver.pdbx
+C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\EasyStepperDriver\obj\Debug\be\EasyStepperDriver.pe
+C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\EasyStepperDriver\obj\Debug\be\EasyStepperDriver.pdbx
+C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\EasyStepperDriver\obj\Debug\le\EasyStepperDriver.pe
+C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\EasyStepperDriver\obj\Debug\le\EasyStepperDriver.pdbx
+C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\EasyStepperDriver\obj\Debug\EasyStepperDriver.dll
+C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\EasyStepperDriver\obj\Debug\EasyStepperDriver.pdb
