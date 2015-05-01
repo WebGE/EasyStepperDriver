@@ -1,37 +1,36 @@
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\le\Netduino_EasyStepperMot.exe
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\be\Netduino_EasyStepperMot.exe
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\le\Netduino_EasyStepperMot.pdb
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\be\Netduino_EasyStepperMot.pdb
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\Netduino_EasyStepperMot.exe
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\Netduino_EasyStepperMot.pdb
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\le\Netduino_EasyStepperMot.pe
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\le\Netduino_EasyStepperMot.pdbx
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\be\Netduino_EasyStepperMot.pe
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\be\Netduino_EasyStepperMot.pdbx
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\LE\EasyStepperDriver.pe
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\LE\SecretLabs.NETMF.Hardware.NetduinoPlus.pe
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\LE\SecretLabs.NETMF.Hardware.Netduino.pe
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\BE\EasyStepperDriver.pe
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\BE\SecretLabs.NETMF.Hardware.NetduinoPlus.pe
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\BE\SecretLabs.NETMF.Hardware.Netduino.pe
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\LE\EasyStepperDriver.pdbx
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\LE\SecretLabs.NETMF.Hardware.NetduinoPlus.pdbx
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\LE\SecretLabs.NETMF.Hardware.Netduino.pdbx
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\BE\EasyStepperDriver.pdbx
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\BE\SecretLabs.NETMF.Hardware.NetduinoPlus.pdbx
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\BE\SecretLabs.NETMF.Hardware.Netduino.pdbx
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\EasyStepperDriver.dll
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\SecretLabs.NETMF.Hardware.NetduinoPlus.dll
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\SecretLabs.NETMF.Hardware.Netduino.dll
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\EasyStepperDriver.pdb
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\EasyStepperDriver.xml
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\SecretLabs.NETMF.Hardware.NetduinoPlus.pdb
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\SecretLabs.NETMF.Hardware.Netduino.pdb
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\obj\Debug\Test EasyStepperMot.csprojResolveAssemblyReference.cache
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\obj\Debug\TinyCLR_DebugReferences.cache
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\obj\Debug\be\Netduino_EasyStepperMot.pe
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\obj\Debug\be\Netduino_EasyStepperMot.pdbx
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\obj\Debug\le\Netduino_EasyStepperMot.pe
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\obj\Debug\le\Netduino_EasyStepperMot.pdbx
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\obj\Debug\Netduino_EasyStepperMot.exe
-C:\Users\Philippe\Documents\GitHub\EasyDriverStepperMotor\Netduino_EasyStepperMot\Netduino_EasyStepperMot\obj\Debug\Netduino_EasyStepperMot.pdb
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\le\Netduino_EasyStepperMot.exe
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\be\Netduino_EasyStepperMot.exe
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\le\Netduino_EasyStepperMot.pdb
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\be\Netduino_EasyStepperMot.pdb
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\Netduino_EasyStepperMot.exe
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\Netduino_EasyStepperMot.pdb
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\le\Netduino_EasyStepperMot.pe
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\le\Netduino_EasyStepperMot.pdbx
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\be\Netduino_EasyStepperMot.pe
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\be\Netduino_EasyStepperMot.pdbx
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\LE\EasyStepperDriver.pe
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\LE\SecretLabs.NETMF.Hardware.NetduinoPlus.pe
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\LE\SecretLabs.NETMF.Hardware.Netduino.pe
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\BE\EasyStepperDriver.pe
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\BE\SecretLabs.NETMF.Hardware.NetduinoPlus.pe
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\BE\SecretLabs.NETMF.Hardware.Netduino.pe
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\LE\EasyStepperDriver.pdbx
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\LE\SecretLabs.NETMF.Hardware.NetduinoPlus.pdbx
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\LE\SecretLabs.NETMF.Hardware.Netduino.pdbx
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\BE\EasyStepperDriver.pdbx
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\BE\SecretLabs.NETMF.Hardware.NetduinoPlus.pdbx
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\BE\SecretLabs.NETMF.Hardware.Netduino.pdbx
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\EasyStepperDriver.dll
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\SecretLabs.NETMF.Hardware.NetduinoPlus.dll
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\SecretLabs.NETMF.Hardware.Netduino.dll
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\EasyStepperDriver.pdb
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\SecretLabs.NETMF.Hardware.NetduinoPlus.pdb
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\bin\Debug\SecretLabs.NETMF.Hardware.Netduino.pdb
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\obj\Debug\Test EasyStepperMot.csprojResolveAssemblyReference.cache
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\obj\Debug\TinyCLR_DebugReferences.cache
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\obj\Debug\be\Netduino_EasyStepperMot.pe
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\obj\Debug\be\Netduino_EasyStepperMot.pdbx
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\obj\Debug\le\Netduino_EasyStepperMot.pe
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\obj\Debug\le\Netduino_EasyStepperMot.pdbx
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\obj\Debug\Netduino_EasyStepperMot.exe
+F:\Ressources\3_Embedded_C#_Netduino_Gadgeteer\3_NetDuino\3_Code_C#\a_Code_C#_Cours_SI\Ex_code_C#_MSVS_2012_Professionel_perso\Partie 1\Netduino_EasyStepperMot\Netduino_EasyStepperMot\obj\Debug\Netduino_EasyStepperMot.pdb
