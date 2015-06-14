@@ -9,7 +9,7 @@ namespace TestNetduinoStepper
     public class Program
     {
         public static void Main()
-        {   // Programme de test d'un moteur pas à pas ITC-VNC-1 http://astrojbm.free.fr/bricolages/picastro/Mecanique/ITC_CNC_1_FR.pdf
+        {   // Programme de test d'un moteur pas à pas ITC-VNC-2
             // N=200 pas - U=12V - C=200g/cmavec une carte EasyStepperMotor 
             var time = 2000; UInt16 delay = 2; UInt32 nbpas = 200;
             var stepper = new EasyStepperDriver(Pins.GPIO_PIN_D8, Pins.GPIO_PIN_D9, Pins.GPIO_PIN_D10, Pins.GPIO_PIN_D11, Pins.GPIO_PIN_D12,Pins.GPIO_PIN_D13);
