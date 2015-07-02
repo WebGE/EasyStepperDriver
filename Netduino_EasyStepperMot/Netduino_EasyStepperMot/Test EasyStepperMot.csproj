@@ -52,9 +52,9 @@
     <Content Include="Lisez-moi.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Ressources\A3967.pdf" />
-    <None Include="Ressources\EasyDriver_v44_sch.pdf" />
-    <None Include="Ressources\ITC-CNC2.pdf" />
-    <None Include="Ressources\miniE_arduino_shield_v1-3_documentation.pdf" />
+    <None Include="Doc_A_Consulter\A3967.pdf" />
+    <None Include="Doc_A_Consulter\EasyDriver_v44_sch.pdf" />
+    <None Include="Doc_A_Consulter\ITC-CNC2.pdf" />
+    <None Include="Doc_A_Consulter\miniE_arduino_shield_v1-3_documentation.pdf" />
   </ItemGroup>
 </Project>
