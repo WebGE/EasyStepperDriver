@@ -59,8 +59,9 @@
 	<li><strong>RAM</strong> : 100 KB (164+)*.</li>
 	<li><strong>Flash</strong> : 384 KB (1408KB)*.</li>
 	<li><strong>Port Ethernet : </strong> 10Mbps (Wifi:802.11b/g/n)*.</li>
-	<li><strong>E/S numériques</strong> : 14</li>
+	<li><strong>E/S numériques</strong> : 22</li>
 	<li><strong>Entrées analogiques</strong> : 6</li>
+	<li><strong>Stockage</strong>: carte µSD</li>
 	<li><strong>IDE</strong> : Microsoft Visual Studio</li>
 	<li><strong>Framework</strong> : .NETMF 4.3</li>
 	<li><strong>Langages de programmation</strong> : C#, VB</li>
@@ -72,28 +73,32 @@
 	</tr>
 	<tr>
 		<td align="center"><strong>Netduino + 2</strong></td>
-		<td  align="center"><strong>Netduino 3 wifi*</strong></td>
+		<td  align="center"><strong>Netduino 3 wifi* (compatible Gadgeteer)</strong></td>
 	</tr>
 </table>
 <ul>
 	<li><strong>Sites à consulter</strong>: <a href="http://netduino.com/netduinoplus2/specs.htm" target="_blank">Netduino</a>, <a href="http://www.netmf.com/" target="_blank">NETMF</a></li>
-	<li><strong>Distributeurs</strong> : <a href="http://www.robotshop.com/en/catalogsearch/result/?q=netduino&order=stats_sales_order_count&dir=desc" target="_blank">RobotShop</a>, <a href="http://www.mouser.fr/Search/Refine.aspx?Keyword=netduino" target="_blank">Mouser Electronics</a></li>
+	<li><strong>Distributeurs</strong> :<a href="http://www.mouser.fr/Search/Refine.aspx?Keyword=netduino" target="_blank">Mouser Electronics</a></li>
 </ul>
 <hr/>
-<h3><a name="classe-easystepperdriver" class="anchor" href="#classe-easystepperdriver"><span class="octicon octicon-link"></span></a>Classe EasyStepperDriver</h3>
+<h3>Classe EasyStepperDriver</h3>
+<hr>
+<ul>
+	<li><strong>Rôle: </strong>Contrôle une carte de commande de moteur pas à pas EasyDriver 4.4.</li>
+	<li><strong>Espace de noms: </strong>ToolBoxes</li>
+	<li><strong>Assembly: </strong>EasyStepperDriver</li>
+</ul>
 <hr/>
-<p><strong>Contenu du dossier à télécharger</strong></p>
-<hr/>
-<p> Le dossier à télécharger (au format zip ou tar.gz) contient le répertoire de la solution <strong>Netduino_EasyStepperMot</strong> composée : </p>
+<p><strong>Contenu du répertoire à télécharger</strong></p>
+<p> Le répertoire à télécharger (au format zip ou tar.gz) contient la solution <strong>Netduino_EasyStepperMot</strong> composée : </p>
 <ul>
 	<li>Du projet <strong>EasyStepperDriver </strong>: le code de la classe <em>EasyStepperDriver</em>.</li>
 	<li>Du projet <strong>TestEasyStepperMot</strong>: un exemple d'utilisation de cette classe.</li>
 </ul>
 <hr/>
 <p><strong>Utilisation</strong></p>
-<hr>
 <ol>
-	<li><strong>Ajouter</strong> la référence<strong> EasyStepperDriver</strong> et l'espace de nom <strong>ToolBoxes </strong>dans le projet.</li>
+	<li><strong>Ajouter</strong> l'(es) assembly(s) dans le répertoire <em>référence</em> du projet et l'espace de noms <strong>ToolBoxes</strong> dans l'en-tête du fichier source.</li>
 	<li><strong>Créer</strong> un objet en utilisant un des constructeurs <em>EasyStepperDriver</em>. Selon le besoin, la carte peut être contrôlée à l'aide de 2, 3, 5 ou 6 des sorties numériques de la Netduino.</li>
 	<li><strong>Activer</strong> la carte avec la méthode <strong>WakeUp</strong>. (Utiliser éventuellement <strong>Sleep</strong> pour réduire sa consommation)</li>
 	<li><strong>Commander</strong> le moteur en rotation avec la méthode <strong>Turn.</strong></li>
