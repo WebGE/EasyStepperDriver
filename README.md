@@ -9,4 +9,4 @@ This library can be use to control the <a href="https://www.sparkfun.com/product
 
 Code written in C# with Visual Studio 2013. 
 
-NetduinoEasyDriver: Example test program.
+Netduino_EasyStepperMot: Example test program.
