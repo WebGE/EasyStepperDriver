@@ -3,6 +3,10 @@ EasyDriverStepperMotor
 
 Tags: EasyDriver Stepper Motor Driver, Netduino, C#, Visual Studio, NETMF 4.3.
 
-Target: Netduino, Netduino plus 2.
+Target: Netduino, Netduino plus 2, Netduino 3.
 
-This library can be use to control the EasyDriver Stepper Motor card with Netduino+ V2. Code written in C# with Visual Studio 2013. Example test program.
+This library can be use to control the <a href="https://www.sparkfun.com/products/12779" target="_blank">EasyDriver</a> Stepper Motor card with Netduino.
+
+Code written in C# with Visual Studio 2013. 
+
+NetduinoEasyDriver: Example test program.
