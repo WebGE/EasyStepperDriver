@@ -1,313 +1,358 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Contrôler un moteur pas à pas avec une carte EasyDriver 4.4 : Programme de test en C# et description de la classe EasyStepperDriver" />
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <title>EasyDriver 4.4</title>
-  </head>
 
-  <body>
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/WebGE/EasyDriverStepperMotor">View on GitHub</a>
+<head>
+	<meta charset='utf-8' />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+	<meta name="description" content="Contrôler un moteur pas à pas avec une carte EasyDriver 4.4 : Programme de test en C# et description de la classe EasyStepperDriver"
+	/>
+	<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+	<title>EasyDriver 4.4</title>
+</head>
 
-          <h1 id="project_title">Contrôleur de moteur pas à pas.</h1>
-          <h2 id="project_tagline">Description de la classe <stong><em>EasyStepperDriver</em></stong> développée en C# pour une Netduino plus 2 ou une Netduino 3.</h2>
+<body>
+	<!-- HEADER -->
+	<div id="header_wrap" class="outer">
+		<header class="inner">
+			<a id="forkme_banner" href="https://github.com/WebGE/EasyDriverStepperMotor">View on GitHub</a>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/WebGE/EasyDriverStepperMotor/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/WebGE/EasyDriverStepperMotor/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+			<h1 id="project_title">Contrôleur de moteur pas à pas.</h1>
+			<h2 id="project_tagline">Description de la classe
+				<stong><em>EasyStepperDriver</em></stong> développée en C# pour une Netduino plus 2 ou une Netduino 3.</h2>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-<hr/>
-<h3>La Carte EasyDriver 4.4 </h3><h5>Spark Fun Electronics</h5><hr>
-<ul>
-	<li><strong>Présentation</strong></li>
-		<p>Cette carte de commande permet de contrôler facilement un <strong>moteur pas-à-pas bipolaire</strong> jusqu'à 750 mA par phase. Elle fonctionne par défaut avec 8 micro-pas.</p>
-		<p>Elle est basée sur le circuit <a href="https://www.sparkfun.com/datasheets/Robotics/A3967.pdf" target="_blank">Allegro A3967</a> et permet de contrôler un moteur pas-à-pas
-		 (par ex: <a href="http://www.gotronic.fr/pj-453.pdf" target="_blank">ITC-VNC-2</a>) très facilement à partir d'un microcontrôleur
-		 (deux broches pour le mode, une broche pour la direction et une pour la vitesse). Le module permet de fonctionner en mode pas complet, demi-pas, quart de pas ou 1/8 de pas (mode par défaut).</p>
-		<p>Pour simplifier la connectique, elle peut être intallée sur une carte <a href="http://shop.airiclenz.com/product_info.php?currency=EUR&products_id=36" target="_blank">miniE Shield</a></p>
-		<table>
-			<tr>
-				<td><img src="http://www.gotronic.fr/ar-commande-de-pas-a-pas-easydriver-4-4-19029.jpg" alt="" width="203" height="172"></td>
-				<td><img src="http://shop.airiclenz.com/download_files/AL001/miniE_arduino_shield_v1-3_assembled.jpg" alt="miniE Shield" width="294" height="240"/></td>
-			</tr>
-			<tr>
-				<td align="center"><strong>EasyDriver 4.4</strong></td>
-				<td  align="center"><strong>miniE Shield</strong></td>
-			</tr>
-		</table>
-	
-	<li><strong>Alimentation</strong>: 7 à 30 Vcc maxi</li>
-	<li><strong>Commande</strong>: via un microcontrôleur 0 - 5 Vcc (mode, direction et vitesse)</li>
-	<li><strong>Sortie</strong>: 150 à 750 mA maxi par phase</li>
-	<li><strong>Dimensions</strong>: 48 x 21 x 18 mm</li>
-	<li><strong>Schéma: </strong>: <a href="http://schmalzhaus.com/EasyDriver/EasyDriver_v44/EasyDriver_v44_sch.pdf" target="_blank">EasyDriver v4.4</a></li>
-	<li><strong>Fiche technique: </strong>: <a href="http://schmalzhaus.com/EasyDriver/" target="_blank">EasyDriver Stepper Motor Driver</a></li>
-	<li><strong>Distributeur</strong>: <a href="http://www.gotronic.fr/art-commande-de-pas-a-pas-easydriver-4-4-19029.htm" target="_blank">GOTRONIC</a></li>
-</ul>
-<hr/>
-<h3>Les cartes Netduino</h3><h5>Secret Labs</h5>
-<hr/>
-<ul>
-	<li><strong>Microcontrôleur</strong> : STM32F405RG 32 bits à architecture Cortex-M4 cadencé à 168 MHz.</li>
-	<li><strong>RAM</strong> : 100 KB (164+)*.</li>
-	<li><strong>Flash</strong> : 384 KB (1408KB)*.</li>
-	<li><strong>Port Ethernet : </strong> 10Mbps (Wifi:802.11b/g/n)*.</li>
-	<li><strong>E/S numériques</strong> : 22</li>
-	<li><strong>Entrées analogiques</strong> : 6</li>
-	<li><strong>Stockage</strong>: carte µSD</li>
-	<li><strong>IDE</strong> : Microsoft Visual Studio</li>
-	<li><strong>Framework</strong> : .NETMF 4.3</li>
-	<li><strong>Langages de programmation</strong> : C#, VB</li>
-</ul>
-<table>
-	<tr>
-		<td><img src="http://www.mouser.com/images/microsites/Netduino_Plus_2.jpg" alt="Netduino plus 2" /></td>
-		<td><img src="http://static.netduino.com/images/netduino3wifi/specs/inputandoutput.jpg" alt="Netduino 3 wifi" /></td>
-	</tr>
-	<tr>
-		<td align="center"><strong>Netduino + 2</strong></td>
-		<td  align="center"><strong>Netduino 3 wifi* (compatible Gadgeteer)</strong></td>
-	</tr>
-</table>
-<ul>
-	<li><strong>Sites à consulter</strong>: <a href="http://netduino.com/netduinoplus2/specs.htm" target="_blank">Netduino</a>, <a href="http://www.netmf.com/" target="_blank">NETMF</a></li>
-	<li><strong>Distributeurs</strong> :<a href="http://www.mouser.fr/Search/Refine.aspx?Keyword=netduino" target="_blank">Mouser Electronics</a></li>
-</ul>
-<hr/>
-<h3>Wiki</h3>
-<ul>
-	<li><strong>Exemples pour la carte Netduino sur Wikispaces: <a href="https://csharpembarquenetduino.wikispaces.com/" target="_blank">lien</a></strong></li>
-</ul>
-<hr>
-<h3>Classe EasyStepperDriver</h3>
-<hr>
-<ul>
-	<li><strong>Rôle: </strong>Contrôle une carte de commande de moteur pas à pas EasyDriver 4.4.</li>
-	<li><strong>Espace de noms: </strong>ToolBoxes</li>
-	<li><strong>Assembly: </strong>EasyStepperDriver</li>
-</ul>
-<hr/>
-<p><strong>Contenu du répertoire à télécharger</strong></p>
-<p> Le répertoire à télécharger (au format zip ou tar.gz) contient la solution <strong>Netduino_EasyStepperMot</strong> composée : </p>
-<ul>
-	<li>Du projet <strong>EasyStepperDriver </strong>: le code de la classe <em>EasyStepperDriver</em>.</li>
-	<li>Du projet <strong>TestEasyStepperMot</strong>: un exemple d'utilisation de cette classe.</li>
-</ul>
-<hr/>
-<p><strong>Utilisation</strong></p>
-<ol>
-	<li><strong>Ajouter</strong> l'(es) assembly(s) dans le répertoire <em>référence</em> du projet et l'espace de noms <strong>ToolBoxes</strong> dans l'en-tête du fichier source.</li>
-	<li><strong>Créer</strong> un objet en utilisant un des constructeurs <em>EasyStepperDriver</em>. Selon le besoin, la carte peut être contrôlée à l'aide de 2, 3, 5 ou 6 des sorties numériques de la Netduino.</li>
-	<li><strong>Activer</strong> la carte avec la méthode <strong>WakeUp</strong>. (Utiliser éventuellement <strong>Sleep</strong> pour réduire sa consommation)</li>
-	<li><strong>Commander</strong> le moteur en rotation avec la méthode <strong>Turn.</strong></li>
-	<li>Désactiver la commande du moteur à l'arrêt (si possible) avec la méthode <strong>DisableOutputs</strong> pour limiter son échauffement.
-	Ne pas oublier de réactiver les sorties avec <strong>EnableOutputs</strong>.	
-	</li>
-</ol>
-<hr>
-<p><strong>Constructeurs</strong></p>
-<table>
-	<tr>
-	 	<td></td>
-		<td><strong>Syntaxe</strong></td>
-		<td><strong>Description</strong></td>
-	</tr>
-	<tr>
-		<td><img src="images/Method_16x.png"></td>
-		<td><strong>EasyStepperDriver</strong>(<strong>Pins</strong> <em>DirectionPin</em>, <strong>Pins</strong> <em>StepPin</em>)</td>
-		<td>Instancie un objet "Carte EasyDriver". Contrôle de la direction et du nombre de pas. <br>
-		<ul>
-		  <li><strong>DirectionPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>DIR</strong> de la carte EasyDriver</li>
-		  <li><strong>StepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>STEP</strong> de la carte EasyDriver</li>
-		</ul>
-		<p><strong>Configuration par défaut: </strong>Forward, mode huitième de pas.</p>
-		</td>
-	</tr>
-	<tr>
-		<td><img src="images/Method_16x.png"></td>
-		<td><strong>EasyStepperDriver</strong>(<strong>Pins</strong> <em>DirectionPin</em>, <strong>Pins</strong> <em>StepPin</em>, <strong>Pins</strong> <em>SleepPin</em>)</td>
-		<td>Instancie un objet "Carte EasyDriver". Contrôle de la direction, du nombre de pas et fonction Sleep/WakeUp. <br>
-		<ul>
-		  <li><strong>DirectionPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>DIR</strong> de la carte EasyDriver</li>
-		  <li><strong>StepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>STEP</strong> de la carte EasyDriver </li>
-		  <li><strong>SleepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>SLP</strong> de la carte EasyDriver (fonction Sleep désactivée par défaut)</li>
-		</ul>
-		<p><strong>Configuration par défaut: </strong>Forward, <strong>Sleep activé</strong>, mode huitième de pas</p>
-		</td>
-	</tr>
-	<tr>
-	<td><img src="images/Method_16x.png"></td>
-	<td>
-	<strong>EasyStepperDriver</strong>(<strong>Pins</strong> <em>DirectionPin</em>, <strong>Pins</strong> <em>StepPin</em>, <strong>Pins</strong> <em>SleepPin</em>, <strong>Pins</strong> <em>StepModePinOne</em>, <strong>Pins</strong> <em>StepModePinTwo</em>)</td>
-	<td>Instancie un objet "Carte EasyDriver". Contrôle de la direction, du nombre de pas et fonction Sleep/WakeUp. <br>
-	<ul>
-	  <li><strong>DirectionPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>DIR</strong> de la carte EasyDriver</li>
-	  <li><strong>StepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>STEP</strong> de la carte EasyDriver </li>
-	  <li><strong>SleepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>SLP</strong> de la carte EasyDriver (fonction Sleep désactivée par défaut)</li>
-	  <li><strong>StepModePinOne</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>MS1</strong></strong> de la carte EasyDriver </li>
-	  <li><strong>SleepModePinTwo</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>MS2</strong> de la carte EasyDriver</li>
-	</ul>
-	<p><strong>Configuration par défaut: </strong>Forward, <strong>Sleep activé</strong>, mode huitième de pas</p>
-	</td>
-	</tr>
-	<tr>
-		<td><img src="images/Method_16x.png"></td>
-	<td>
-	<strong>EasyStepperDriver</strong>(<strong>Pins</strong> <em>DirectionPin</em>, <strong>Pins</strong> <em>StepPin</em>, <strong>Pins</strong> <em>SleepPin</em>, <strong>Pins</strong> <em>StepModePinOne</em>, <strong>Pins</strong> <em>EnablePin</em>, <strong>Pins</strong> <em>StepModePinTwo</em>)</td>
-	<td>Instancie un objet "Carte EasyDriver". Contrôle de la direction, du nombre de pas et fonction Sleep/WakeUp. <br>
-	<ul>
-	  <li><strong>DirectionPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>DIR</strong> de la carte EasyDriver</li>
-	  <li><strong>StepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>STEP</strong> de la carte EasyDriver </li>
-	  <li><strong>SleepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>SLP</strong> de la carte EasyDriver (fonction Sleep désactivée par défaut)</li>
-	  <li><strong>StepModePinOne</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>MS1</strong></strong> de la carte EasyDriver </li>
-	  <li><strong>SleepModePinTwo</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>MS2</strong> de la carte EasyDriver</li>
-	  <li><strong>EnablePin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>ENABLE</strong> de la carte EasyDriver</li>
-	</ul>
-	<p><strong>Configuration par défaut: </strong>Forward, <strong>Sleep activé</strong>, mode huitième de pas, <strong>Enable activé</strong> </p>
-	</td>
-	</tr>
-</table> 
-<p><strong>Enumérations</strong></p>
-<table width="100%">
-	<tr>
-		<td></td>
-		<td><strong>Syntaxe</strong></td>
-		<td><strong>Description</strong></td>
-	</tr>
-	<tr>
-		<td><img src="images/Enumerator_16x.png"></td>
-		<td><strong>Direction</strong></td>
-		<td>
-		  <strong>- Forward: </strong>sens horaire<br/>
-		  <strong>- Backward: </strong>sens anti-horaire<br/>
-		</td>
-	</tr>
-	<tr>
-		<td><img src="images/Enumerator_16x.png"></td>
-		<td><strong>Mode</strong></td>
-		<td>
-	  	<strong>- Full: </strong>pas entier<br/>
-	  	<strong>- Half: </strong>demi pas<br/>
-	  	<strong>- Quarter: </strong>quart de pas<br/> 
-	  	<strong>- OneEighth: </strong>huitième de pas (<strong>mode par défaut</strong>)<br/>
-		</td>
-	</tr>
-	</table>
-<p><strong>Propriétés</strong></p>
-<table width="100%">
-	<tr>
-	  <td></td>
-	  <td><strong>Syntaxe</strong></td>
-	  <td><strong>Description</strong></td>
-	</tr>
-	<tr>
-	  <td><img src="images/Property_20x.png"></td>
-	  <td><strong>IsDriverSleep</strong></td>
-	  <td>Retourne :<br/>
-	  	<strong>- False</strong> si la logique et les sorties sont activées<br/>
-	  	<strong>- True</strong> si la logique et les sorties sont désactivées<br/>
-	  </td>
-	</tr>
-	<tr>
-		  <td><img src="images/Property_20x.png"></td>
-	  <td><strong>IsOutputsEnable</strong></td>
-	  <td>Retourne :<br/>
-	  	<strong>- True</strong> si les sorties sont activées<br/>
-	  	<strong>- False</strong> si les sorties sont désactivées<br/>
-	  </td>
-	</tr>
-	<tr>
-		  <td><img src="images/Property_20x.png"></td>
-	  <td><strong>StepDelay</strong></td>
-	  <td>Retourne la durée d'un pas en ms</td>
-	</tr>
-	<tr>
-	 	  <td><img src="images/Property_20x.png"></td>
-	  <td><strong>StepDirection</strong></td>
-	  <td>
-	    Retourne le sens de rotation: <br/>
-	    <strong>0: </strong>horaire<br/>
-	    <strong>1: </strong>anti-horaire
-	  </td>
-	</tr>
-	<tr>
-	 	  <td><img src="images/Property_20x.png"></td>
-	<td><strong>StepMode</strong></td>
-	  <td>Retourne le mode de fonctionnement du moteur:<br/>
-	    <strong>0: </strong>pas entier<br/>
-	    <strong>1: </strong>demi pas<br/>
-	    <strong>2: </strong>quart de pas<br/>
-	    <strong>3: </strong>huitième de pas (<strong>mode par défaut</strong>)
-	  </td>
-	</tr>
-	<tr>
-	 	  <td><img src="images/Property_20x.png"></td>
-	  <td><strong>Steps</strong></td>
-	  <td>Retourne le nombre de pas que le moteur doit effectuer</td>
-	</tr>
-</table>
-<p><strong>Méthodes</strong></p>
-<table>
-	<tr>
-		<td></td>
-		<td><strong>Syntaxe</strong></td>
-		<td><strong>Description</strong></td>
-	</tr>
-	<tr>
-			  <td><img src="images/Method_16x.png"></td>
-		<td><strong>bool DisableOutputs</strong>()</td>
-		<td><strong>Désactivation</strong> des sorties A et B de la carte EasyDriver.<br/> Renvoi un booléen attestant de l'opération.
-		(La broche <strong>Enable</strong> doit être initialisée à l'aide d'un constructeur avant d'utiliser cette méthode)</td>
-	</tr>
-	<tr>
-					  <td><img src="images/Method_16x.png"></td>
-		<td><strong>bool EnableOutputs</strong>()</td>
-		<td><strong>Activation</strong> des sorties A et B de la carte EasyDriver.<br/> Renvoi un booléen attestant de l'opération.
-		(La broche <strong>Enable</strong> doit être initialisée à l'aide d'un constructeur avant d'utiliser cette méthode)</td>
-	</tr>
-	<tr>
-					  <td><img src="images/Method_16x.png"></td>
-		<td><strong>bool Sleep</strong>()</td>
-		<td><strong>Désactivation</strong> de la logique de commande et des sorties A et B de la carte EasyDriver.<br/> Renvoi un booléen attestant de l'opération.
-		(La broche <strong>SLP</strong> doit être initialisée à l'aide d'un constructeur avant d'utiliser cette méthode)<br/><strong>Mode activé par défaut</strong></td>
-	</tr>
-	<tr>
-					  <td><img src="images/Method_16x.png"></td>
-		<td><strong>void Turn</strong>(<strong>UInt32</strong> <em>steps</em>, <strong>Mode</strong> <em>mode</em>, <strong>direction</strong> <em>direction</em>, <strong>int</strong> <em>[delay=2]</em>)</td>
-		<td>Commande du moteur pas à pas:<br/>
-			<strong>- steps: </strong>Nombre de pas à effectuer<br/>
-			<strong>- mode: </strong>Mode de fonctionnement (Full, Half, Quarter, OneEighth)<br/>
-			<strong>- direction: </strong>Sens de rotation (Forward, Backward)<br/>
-			<strong>- delay: </strong> durée d'un pas (<strong>2ms par défaut</strong>)
-		</td>
-	</tr>
-	<tr>
-					  <td><img src="images/Method_16x.png"></td>
-		<td><strong>bool WakeUp</strong>()</td>
-		<td><strong>Activation</strong> de la logique de commande et des sorties de la carte EasyDriver.<br/> Renvoi un booléen attestant de l'opération.
-		(La broche <strong>SLP</strong> doit être initialisée à l'aide d'un constructeur avant d'utiliser cette méthode)</td>
-	</tr>
-</table>
+			<section id="downloads">
+				<a class="zip_download_link" href="https://github.com/WebGE/EasyDriverStepperMotor/zipball/master">Download this project as a .zip file</a>
+				<a class="tar_download_link" href="https://github.com/WebGE/EasyDriverStepperMotor/tarball/master">Download this project as a tar.gz file</a>
+			</section>
+		</header>
+	</div>
+
+	<!-- MAIN CONTENT -->
+	<div id="main_content_wrap" class="outer">
+		<section id="main_content" class="inner">
+			<hr/>
+			<h3>La Carte EasyDriver 4.4 </h3>
+			<h5>Spark Fun Electronics</h5>
+			<hr>
+			<ul>
+				<li><strong>Présentation</strong></li>
+				<p>Cette carte de commande permet de contrôler facilement un <strong>moteur pas-à-pas bipolaire</strong> jusqu'à 750 mA
+					par phase. Elle fonctionne par défaut avec 8 micro-pas.</p>
+				<p>Elle est basée sur le circuit <a href="https://www.sparkfun.com/datasheets/Robotics/A3967.pdf" target="_blank">Allegro A3967</a>					et permet de contrôler un moteur pas-à-pas (par ex: <a href="http://www.gotronic.fr/pj-453.pdf" target="_blank">ITC-VNC-2</a>)
+					très facilement à partir d'un microcontrôleur (deux broches pour le mode, une broche pour la direction et une pour la
+					vitesse). Le module permet de fonctionner en mode pas complet, demi-pas, quart de pas ou 1/8 de pas (mode par défaut).</p>
+				<p>Pour simplifier la connectique, elle peut être intallée sur une carte <a href="http://shop.airiclenz.com/product_info.php?currency=EUR&products_id=36"
+						target="_blank">miniE Shield</a></p>
+				<table>
+					<tr>
+						<td><img src="http://www.gotronic.fr/ar-commande-de-pas-a-pas-easydriver-4-4-19029.jpg" alt="" width="203" height="172"></td>
+						<td><img src="http://shop.airiclenz.com/download_files/AL001/miniE_arduino_shield_v1-3_assembled.jpg" alt="miniE Shield"
+								width="294" height="240" /></td>
+					</tr>
+					<tr>
+						<td align="center"><strong>EasyDriver 4.4</strong></td>
+						<td align="center"><strong>miniE Shield</strong></td>
+					</tr>
+				</table>
+
+				<li><strong>Alimentation</strong>: 7 à 30 Vcc maxi</li>
+				<li><strong>Commande</strong>: via un microcontrôleur 0 - 5 Vcc (mode, direction et vitesse)</li>
+				<li><strong>Sortie</strong>: 150 à 750 mA maxi par phase</li>
+				<li><strong>Dimensions</strong>: 48 x 21 x 18 mm</li>
+				<li><strong>Schéma: </strong>: <a href="http://schmalzhaus.com/EasyDriver/EasyDriver_v44/EasyDriver_v44_sch.pdf" target="_blank">EasyDriver v4.4</a></li>
+				<li><strong>Fiche technique: </strong>: <a href="http://schmalzhaus.com/EasyDriver/" target="_blank">EasyDriver Stepper Motor Driver</a></li>
+				<li><strong>Distributeur</strong>: <a href="http://www.gotronic.fr/art-commande-de-pas-a-pas-easydriver-4-4-19029.htm" target="_blank">GOTRONIC</a></li>
+			</ul>
+			<hr/>
+			<h3>Les cartes Netduino</h3>
+			<h5>Secret Labs</h5>
+			<hr/>
+			<ul>
+				<li><strong>Microcontrôleur</strong> : STM32F405RG 32 bits à architecture Cortex-M4 cadencé à 168 MHz.</li>
+				<li><strong>RAM</strong> : 100 KB (164+)*.</li>
+				<li><strong>Flash</strong> : 384 KB (1408KB)*.</li>
+				<li><strong>Port Ethernet : </strong> 10Mbps (Wifi:802.11b/g/n)*.</li>
+				<li><strong>E/S numériques</strong> : 22</li>
+				<li><strong>Entrées analogiques</strong> : 6</li>
+				<li><strong>Stockage</strong>: carte µSD</li>
+				<li><strong>IDE</strong> : Microsoft Visual Studio</li>
+				<li><strong>Framework</strong> : .NETMF 4.3</li>
+				<li><strong>Langages de programmation</strong> : C#, VB</li>
+			</ul>
+			<table>
+				<tr>
+					<td><img src="http://www.mouser.com/images/microsites/Netduino_Plus_2.jpg" alt="Netduino plus 2" /></td>
+					<td><img src="http://static.netduino.com/images/netduino3wifi/specs/inputandoutput.jpg" alt="Netduino 3 wifi" /></td>
+				</tr>
+				<tr>
+					<td align="center"><strong>Netduino + 2</strong></td>
+					<td align="center"><strong>Netduino 3 wifi* (compatible Gadgeteer)</strong></td>
+				</tr>
+			</table>
+			<ul>
+				<li><strong>Sites à consulter</strong>: <a href="http://netduino.com/netduinoplus2/specs.htm" target="_blank">Netduino</a>,
+					<a href="http://www.netmf.com/" target="_blank">NETMF</a></li>
+				<li><strong>Distributeurs</strong> :<a href="http://www.mouser.fr/Search/Refine.aspx?Keyword=netduino" target="_blank">Mouser Electronics</a></li>
+			</ul>
+			<hr/>
+			<h3>Wiki</h3>
+			<ul>
+				<li><strong>Exemples pour la carte Netduino sur Wikispaces: <a href="https://csharpembarquenetduino.wikispaces.com/" target="_blank">lien</a></strong></li>
+			</ul>
+			<hr>
+			<h3>Contenu du répertoire proposé au téléchargement</h3>
+			<p>Le répertoire proposé au téléchargement (au format zip ou tar.gz) contient la solution <strong>Netduino_EasyStepperMot</strong>				composée : </p>
+			<ul>
+				<li>Du projet <strong>EasyStepperDriver </strong>: le <strong>code source </strong>de la classe <em>EasyStepperDriver</em>.</li>
+				<li>Du projet <strong>TestEasyStepperMot</strong>: un exemple d'utilisation de cette classe.</li>
+			</ul>
+			<p><em>Remarques : La dernière version <strong>compilée</strong> de la classe <strong>EasyStepperDriver</strong> se situe dans la bibliothèque <strong>MicroToolsKit</strong> disponible sur <a href="https://www.nuget.org/" target="_blank">nuget.org</a>.</em></p>
+			<p align="center"><img src="images/NuGet-large.png" /></p>
+			<p><em>Installer cette bibliothèque dans le projet simplifie l'utilisation de cette classe.</em></p>
+			<hr/>
+			<h3>Description et utilisation de la classe EasyStepperDriver</h3>
+			<hr>
+			<ul>
+				<li><strong>Rôle: </strong>Contrôler une carte de commande de moteur pas à pas EasyDriver 4.4.</li>
+				<li><strong>Assembly: </strong> <em>MicroToolsKit</em> (disponible sur <a href="https://www.nuget.org/" target="_blank">nuget.org</a>)</li>
+				<li><strong>Espace de noms: </strong><em>Microtoolskit.Hardware.MotorDrivers</em></li>
+			</ul>
+			<hr/>
+
+			<p><strong>Création d'un projet avec l'IDE Visual Studio</strong></p>
+			<ol>
+				<li><strong>Utiliser</strong> le gestionnaire de paquets NuGet pour <strong>ajouter</strong> l'assembly <strong>MicroToolsKit</strong> (disponible sur <a href="https://www.nuget.org/" target="_blank">nuget.org</a>) dans le répertoire <em>Références</em>					du projet.(clic droit sur <em>Références</em> puis <em>Gérer les packages NuGet...</em>)</li>
+				<li><strong>Ajouter</strong> l'espace de noms <strong>Microtoolskit.Hardware.MotorDrivers</strong> dans l'en-tête du fichier source.</li>
+				<li><strong>Créer</strong> un objet en utilisant un des constructeurs <em>EasyStepperDriver</em>. Selon le besoin, la carte
+					peut être contrôlée à l'aide de 2, 3, 5 ou 6 des sorties numériques de la Netduino.</li>
+				<li><strong>Activer</strong> la carte avec la méthode <strong>WakeUp</strong>. (Utiliser éventuellement <strong>Sleep</strong>					pour réduire sa consommation)</li>
+				<li><strong>Commander</strong> le moteur en rotation avec la méthode <strong>Turn.</strong></li>
+				<li>Désactiver la commande du moteur à l'arrêt (si possible) avec la méthode <strong>DisableOutputs</strong> pour limiter
+					son échauffement. Ne pas oublier de réactiver les sorties avec <strong>EnableOutputs</strong>.
+				</li>
+			</ol>
+			<hr>
+			<p><strong>Constructeurs</strong></p>
+			<table>
+				<tr>
+					<td></td>
+					<td><strong>Syntaxe</strong></td>
+					<td><strong>Description</strong></td>
+				</tr>
+				<tr>
+					<td><img src="images/Method_16x.png"></td>
+					<td><strong>EasyStepperDriver</strong>(<strong>Pins</strong> <em>DirectionPin</em>, <strong>Pins</strong> <em>StepPin</em>)</td>
+					<td>Instancie un objet "Carte EasyDriver". Contrôle de la direction et du nombre de pas. <br>
+						<ul>
+							<li><strong>DirectionPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>DIR</strong> de la carte
+								EasyDriver
+							</li>
+							<li><strong>StepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>STEP</strong> de la carte
+								EasyDriver
+							</li>
+						</ul>
+						<p><strong>Configuration par défaut: </strong>Forward, mode huitième de pas.</p>
+					</td>
+				</tr>
+				<tr>
+					<td><img src="images/Method_16x.png"></td>
+					<td><strong>EasyStepperDriver</strong>(<strong>Pins</strong> <em>DirectionPin</em>, <strong>Pins</strong> <em>StepPin</em>,
+						<strong>Pins</strong> <em>SleepPin</em>)</td>
+					<td>Instancie un objet "Carte EasyDriver". Contrôle de la direction, du nombre de pas et fonction Sleep/WakeUp. <br>
+						<ul>
+							<li><strong>DirectionPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>DIR</strong> de la carte
+								EasyDriver
+							</li>
+							<li><strong>StepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>STEP</strong> de la carte
+								EasyDriver </li>
+							<li><strong>SleepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>SLP</strong> de la carte
+								EasyDriver (fonction Sleep désactivée par défaut)</li>
+						</ul>
+						<p><strong>Configuration par défaut: </strong>Forward, <strong>Sleep activé</strong>, mode huitième de pas</p>
+					</td>
+				</tr>
+				<tr>
+					<td><img src="images/Method_16x.png"></td>
+					<td>
+						<strong>EasyStepperDriver</strong>(<strong>Pins</strong> <em>DirectionPin</em>, <strong>Pins</strong> <em>StepPin</em>,
+						<strong>Pins</strong> <em>SleepPin</em>, <strong>Pins</strong> <em>StepModePinOne</em>, <strong>Pins</strong> <em>StepModePinTwo</em>)</td>
+					<td>Instancie un objet "Carte EasyDriver". Contrôle de la direction, du nombre de pas et fonction Sleep/WakeUp. <br>
+						<ul>
+							<li><strong>DirectionPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>DIR</strong> de la carte
+								EasyDriver
+							</li>
+							<li><strong>StepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>STEP</strong> de la carte
+								EasyDriver </li>
+							<li><strong>SleepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>SLP</strong> de la carte
+								EasyDriver (fonction Sleep désactivée par défaut)</li>
+							<li><strong>StepModePinOne</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>MS1</strong></strong>
+								de la carte EasyDriver </li>
+							<li><strong>SleepModePinTwo</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>MS2</strong> de la
+								carte EasyDriver</li>
+						</ul>
+						<p><strong>Configuration par défaut: </strong>Forward, <strong>Sleep activé</strong>, mode huitième de pas</p>
+					</td>
+				</tr>
+				<tr>
+					<td><img src="images/Method_16x.png"></td>
+					<td>
+						<strong>EasyStepperDriver</strong>(<strong>Pins</strong> <em>DirectionPin</em>, <strong>Pins</strong> <em>StepPin</em>,
+						<strong>Pins</strong> <em>SleepPin</em>, <strong>Pins</strong> <em>StepModePinOne</em>, <strong>Pins</strong> <em>EnablePin</em>,
+						<strong>Pins</strong> <em>StepModePinTwo</em>)</td>
+					<td>Instancie un objet "Carte EasyDriver". Contrôle de la direction, du nombre de pas et fonction Sleep/WakeUp. <br>
+						<ul>
+							<li><strong>DirectionPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>DIR</strong> de la carte
+								EasyDriver
+							</li>
+							<li><strong>StepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>STEP</strong> de la carte
+								EasyDriver </li>
+							<li><strong>SleepPin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>SLP</strong> de la carte
+								EasyDriver (fonction Sleep désactivée par défaut)</li>
+							<li><strong>StepModePinOne</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>MS1</strong></strong>
+								de la carte EasyDriver </li>
+							<li><strong>SleepModePinTwo</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>MS2</strong> de la
+								carte EasyDriver</li>
+							<li><strong>EnablePin</strong>: Digital I/O de la carte Netduino connectée à la broche <strong>ENABLE</strong> de la carte
+								EasyDriver
+							</li>
+						</ul>
+						<p><strong>Configuration par défaut: </strong>Forward, <strong>Sleep activé</strong>, mode huitième de pas, <strong>Enable activé</strong>							</p>
+					</td>
+				</tr>
+			</table>
+			<p><strong>Enumérations</strong></p>
+			<table width="100%">
+				<tr>
+					<td></td>
+					<td><strong>Syntaxe</strong></td>
+					<td><strong>Description</strong></td>
+				</tr>
+				<tr>
+					<td><img src="images/Enumerator_16x.png"></td>
+					<td><strong>Direction</strong></td>
+					<td>
+						<strong>- Forward: </strong>sens horaire<br/>
+						<strong>- Backward: </strong>sens anti-horaire<br/>
+					</td>
+				</tr>
+				<tr>
+					<td><img src="images/Enumerator_16x.png"></td>
+					<td><strong>Mode</strong></td>
+					<td>
+						<strong>- Full: </strong>pas entier<br/>
+						<strong>- Half: </strong>demi pas<br/>
+						<strong>- Quarter: </strong>quart de pas<br/>
+						<strong>- OneEighth: </strong>huitième de pas (<strong>mode par défaut</strong>)<br/>
+					</td>
+				</tr>
+			</table>
+			<p><strong>Propriétés</strong></p>
+			<table width="100%">
+				<tr>
+					<td></td>
+					<td><strong>Syntaxe</strong></td>
+					<td><strong>Description</strong></td>
+				</tr>
+				<tr>
+					<td><img src="images/Property_20x.png"></td>
+					<td><strong>IsDriverSleep</strong></td>
+					<td>Retourne :<br/>
+						<strong>- False</strong> si la logique et les sorties sont activées<br/>
+						<strong>- True</strong> si la logique et les sorties sont désactivées<br/>
+					</td>
+				</tr>
+				<tr>
+					<td><img src="images/Property_20x.png"></td>
+					<td><strong>IsOutputsEnable</strong></td>
+					<td>Retourne :<br/>
+						<strong>- True</strong> si les sorties sont activées<br/>
+						<strong>- False</strong> si les sorties sont désactivées<br/>
+					</td>
+				</tr>
+				<tr>
+					<td><img src="images/Property_20x.png"></td>
+					<td><strong>StepDelay</strong></td>
+					<td>Retourne la durée d'un pas en ms</td>
+				</tr>
+				<tr>
+					<td><img src="images/Property_20x.png"></td>
+					<td><strong>StepDirection</strong></td>
+					<td>
+						Retourne le sens de rotation: <br/>
+						<strong>0: </strong>horaire<br/>
+						<strong>1: </strong>anti-horaire
+					</td>
+				</tr>
+				<tr>
+					<td><img src="images/Property_20x.png"></td>
+					<td><strong>StepMode</strong></td>
+					<td>Retourne le mode de fonctionnement du moteur:<br/>
+						<strong>0: </strong>pas entier<br/>
+						<strong>1: </strong>demi pas<br/>
+						<strong>2: </strong>quart de pas<br/>
+						<strong>3: </strong>huitième de pas (<strong>mode par défaut</strong>)
+					</td>
+				</tr>
+				<tr>
+					<td><img src="images/Property_20x.png"></td>
+					<td><strong>Steps</strong></td>
+					<td>Retourne le nombre de pas que le moteur doit effectuer</td>
+				</tr>
+			</table>
+			<p><strong>Méthodes</strong></p>
+			<table>
+				<tr>
+					<td></td>
+					<td><strong>Syntaxe</strong></td>
+					<td><strong>Description</strong></td>
+				</tr>
+				<tr>
+					<td><img src="images/Method_16x.png"></td>
+					<td><strong>bool DisableOutputs</strong>()</td>
+					<td><strong>Désactivation</strong> des sorties A et B de la carte EasyDriver.<br/> Renvoi un booléen attestant de l'opération.
+						(La broche <strong>Enable</strong> doit être initialisée à l'aide d'un constructeur avant d'utiliser cette méthode)</td>
+				</tr>
+				<tr>
+					<td><img src="images/Method_16x.png"></td>
+					<td><strong>bool EnableOutputs</strong>()</td>
+					<td><strong>Activation</strong> des sorties A et B de la carte EasyDriver.<br/> Renvoi un booléen attestant de l'opération.
+						(La broche <strong>Enable</strong> doit être initialisée à l'aide d'un constructeur avant d'utiliser cette méthode)</td>
+				</tr>
+				<tr>
+					<td><img src="images/Method_16x.png"></td>
+					<td><strong>bool Sleep</strong>()</td>
+					<td><strong>Désactivation</strong> de la logique de commande et des sorties A et B de la carte EasyDriver.<br/> Renvoi un
+						booléen attestant de l'opération. (La broche <strong>SLP</strong> doit être initialisée à l'aide d'un constructeur
+						avant d'utiliser cette méthode)<br/><strong>Mode activé par défaut</strong></td>
+				</tr>
+				<tr>
+					<td><img src="images/Method_16x.png"></td>
+					<td><strong>void Turn</strong>(<strong>UInt32</strong> <em>steps</em>, <strong>Mode</strong> <em>mode</em>, <strong>direction</strong>						<em>direction</em>, <strong>int</strong> <em>[delay=2]</em>)</td>
+					<td>Commande du moteur pas à pas:<br/>
+						<strong>- steps: </strong>Nombre de pas à effectuer<br/>
+						<strong>- mode: </strong>Mode de fonctionnement (Full, Half, Quarter, OneEighth)<br/>
+						<strong>- direction: </strong>Sens de rotation (Forward, Backward)<br/>
+						<strong>- delay: </strong> durée d'un pas (<strong>2ms par défaut</strong>)
+					</td>
+				</tr>
+				<tr>
+					<td><img src="images/Method_16x.png"></td>
+					<td><strong>bool WakeUp</strong>()</td>
+					<td><strong>Activation</strong> de la logique de commande et des sorties de la carte EasyDriver.<br/> Renvoi un booléen
+						attestant de l'opération. (La broche <strong>SLP</strong> doit être initialisée à l'aide d'un constructeur avant d'utiliser
+						cette méthode)</td>
+				</tr>
+			</table>
 		</section>
-    </div>
+	</div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Contrôler un moteur pas à pas avec une carte EasyDriver 4.4 maintained by <a href="https://github.com/WebGE">WebGE</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-  </body>
+	<!-- FOOTER  -->
+	<div id="footer_wrap" class="outer">
+		<footer class="inner">
+			<p class="copyright">Contrôler un moteur pas à pas avec une carte EasyDriver 4.4 maintained by <a href="https://github.com/WebGE">WebGE</a></p>
+			<p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+		</footer>
+	</div>
+</body>
+
 </html>
