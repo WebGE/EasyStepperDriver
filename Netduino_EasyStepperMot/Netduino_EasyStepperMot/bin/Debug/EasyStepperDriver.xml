@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EasyStepperDriver</name>
+    </assembly>
+    <members>
+        <member name="M:ToolBoxes.EasyStepperDriver.#ctor(Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin)">
+            <summary>
+            Creates an instance of the driver, that only lets you move and choose direction.
+            </summary>
+            <param name="DirectionPin">Control EasyDriver DIR: a digital pin used for direction</param>
+            <param name="StepPin">Control EasyDriver STEP: a digital pin used for steps</param>
+        </member>
+        <member name="M:ToolBoxes.EasyStepperDriver.#ctor(Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin)">
+            <summary>
+            Creates an instance of the driver, that only lets you move, choose direction and put the controller to sleep
+            </summary>
+            <param name="DirectionPin">Control EasyDriver DIR: a digital pin used for direction</param>
+            <param name="StepPin">Control EasyDriver STEP: a digital pin used for steps</param>
+            <param name="SleepPin">Control EasyDriver SLP: a digital pin used for sleep function (disable par default)</param>
+        </member>
+        <member name="M:ToolBoxes.EasyStepperDriver.#ctor(Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin)">
+            <summary>
+            Creates an instance of the driver, that only lets you move, choose direction, sleep, and select step mode
+            </summary>
+            <param name="DirectionPin">Control EasyDriver DIR PIN: a digital pin used for direction</param>
+            <param name="StepPin">Control EasyDriver STEP: a digital pin used for steps</param>
+            <param name="SleepPin">Control EasyDriver SLP: a digital pin used for sleep function (disable par default)</param>
+            <param name="StepModePinOne">Control EasyDriver MS1: a digital pin used for control mode</param>
+            <param name="StepModePinTwo">Control EasyDriver MS2: a digital pin used for control mode</param>
+        </member>
+        <member name="M:ToolBoxes.EasyStepperDriver.#ctor(Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin)">
+            <summary>
+            Creates an instance of the driver, that only lets you move, choose direction, sleep, select step mode and enable / disable card
+            </summary>
+            <param name="DirectionPin">Control EasyDriver DIR PIN: a digital pin used for direction</param>
+            <param name="StepPin">Control EasyDriver STEP: a digital pin used for steps</param>
+            <param name="SleepPin">Control EasyDriver SLP: a digital pin used for sleep function (disable par default)</param>
+            <param name="StepModePinOne">Control EasyDriver MS1: a digital pin used for control mode</param>
+            <param name="StepModePinTwo">Control EasyDriver MS2: a digital pin used for control mode</param>
+            <param name="EnablePin">Control EasyDriver ENABLE: a digital pin used for Enable function</param>
+        </member>
+        <member name="M:ToolBoxes.EasyStepperDriver.Sleep">
+            <summary>
+            Put the stepper driver to sleep mode
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ToolBoxes.EasyStepperDriver.WakeUp">
+            <summary>
+            Wake up the stepper driver
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ToolBoxes.EasyStepperDriver.EnableOutputs">
+            <summary>
+            Enable the stepper driver outputs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ToolBoxes.EasyStepperDriver.DisableOutputs">
+            <summary>
+            Disable the stepper driver outputs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ToolBoxes.EasyStepperDriver.Turn(System.UInt32,ToolBoxes.EasyStepperDriver.Direction,System.Int32,ToolBoxes.EasyStepperDriver.Mode)">
+            <summary>
+            Moves the stepper motor
+            </summary>
+            <param name="Steps">indicate the amount of steps that need to be moved</param>
+            <param name="Delay">duration between steps</param>
+        </member>
+        <member name="M:ToolBoxes.EasyStepperDriver.ChangeDirection(ToolBoxes.EasyStepperDriver.Direction)">
+            <summary>
+            Set Direction pin
+            </summary>
+            <param name="dir"></param>
+        </member>
+        <member name="M:ToolBoxes.EasyStepperDriver.ChangeStepMode(ToolBoxes.EasyStepperDriver.Mode)">
+            <summary>
+            Set pins MS1 and MS2 
+            </summary>
+            <param name="mode"></param>
+        </member>
+        <member name="P:ToolBoxes.EasyStepperDriver.Steps">
+            <summary>
+            Get Steps
+            </summary>
+        </member>
+        <member name="P:ToolBoxes.EasyStepperDriver.StepDirection">
+            <summary>
+            Get direction
+            </summary>      
+        </member>
+        <member name="P:ToolBoxes.EasyStepperDriver.StepMode">
+            <summary>
+            Get Mode
+            </summary>
+        </member>
+        <member name="P:ToolBoxes.EasyStepperDriver.StepDelay">
+            <summary>
+            Get time between two step
+            </summary>
+        </member>
+        <member name="P:ToolBoxes.EasyStepperDriver.IsDriverSleep">
+            <summary>
+            Get if Sleep or not
+            </summary>
+        </member>
+        <member name="P:ToolBoxes.EasyStepperDriver.IsOutputsEnable">
+            <summary>
+            Get if Enable or Disable
+            </summary>
+        </member>
+        <member name="T:ToolBoxes.EasyStepperDriver.Direction">
+            <summary>
+            Directions are Forward or Backward
+            </summary>
+        </member>
+        <member name="T:ToolBoxes.EasyStepperDriver.Mode">
+            <summary>
+            Modes are Full, Half, Quarter, OneEighth
+            </summary> 
+        </member>
+    </members>
+</doc>
