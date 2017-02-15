@@ -18,7 +18,8 @@
 
 			<h1 id="project_title">Contrôleur de moteur pas à pas.</h1>
 			<h2 id="project_tagline">Description de la classe
-				<strong><em>EasyStepperDriver</em></strong> développée en C# sous .NETMF 4.3 pour les cartes Netduino et FEZ (PANDA, COBRA...)</h2>
+				<strong><em>EasyStepperDriver</em></strong> développée en C# sous .NETMF 4.3 pour les cartes Netduino et FEZ (PANDA,
+				COBRA...)</h2>
 
 			<section id="downloads">
 				<a class="zip_download_link" href="https://github.com/WebGE/EasyDriverStepperMotor/zipball/master">Download this project as a .zip file</a>
@@ -31,7 +32,7 @@
 	<div id="main_content_wrap" class="outer">
 		<section id="main_content" class="inner">
 			<hr>
-			<h4>Sommaire</h4>			
+			<h4>Sommaire</h4>
 			<ol>
 				<li>LE MATERIEL
 					<ol>
@@ -62,8 +63,10 @@
 				<p>Elle est basée sur le circuit <a href="https://www.sparkfun.com/datasheets/Robotics/A3967.pdf" target="_blank">Allegro A3967</a>					et permet de contrôler un moteur pas-à-pas (par ex: <a href="http://www.gotronic.fr/pj-453.pdf" target="_blank">ITC-VNC-2</a>)
 					très facilement à partir d'un microcontrôleur (deux broches pour le mode, une broche pour la direction et une pour la
 					vitesse). Le module permet de fonctionner en mode pas complet, demi-pas, quart de pas ou 1/8 de pas (mode par défaut).</p>
-				<p>Pour simplifier la connectique, elle peut être intallée sur une carte <a href="http://shop.airiclenz.com/product_info.php?currency=EUR&products_id=36"
-						target="_blank">miniE Shield</a></p>
+				<p>Pour simplifier la connectique, elle peut être intallée sur une carte
+					<a href="http://shop.airiclenz.com/product_info.php?currency=EUR&products_id=36"
+						target="_blank">miniE Shield</a>
+				</p>
 				<table>
 					<tr>
 						<td><img src="http://www.gotronic.fr/ar-commande-de-pas-a-pas-easydriver-4-4-19029.jpg" alt="" width="203" height="172"></td>
@@ -116,34 +119,85 @@
 				<li><strong>Distributeurs</strong> :<a href="http://www.mouser.fr/Search/Refine.aspx?Keyword=netduino" target="_blank">Mouser Electronics</a></li>
 			</ul>
 			<hr>
-			<h3>Wiki</h3>
-			<ul>
-				<li><strong>Exemples pour la carte Netduino sur Wikispaces: <a href="https://csharpembarquenetduino.wikispaces.com/" target="_blank">lien</a></strong></li>
-			</ul>
+
+			<h4 id="FEZ">
+				<a name="carte-netduino-de-secret-labs" class="anchor" href="#carte-netduino-de-secret-labs" target="_blank">
+					<span class="octicon octicon-link"></span></a>1.4 Les cartes FEZ</h4>
+			<h5>GHI Electonics (Extrait)</h5>
 			<hr>
-			<h3>Contenu du répertoire proposé au téléchargement</h3>
+			<ul>
+				<li><strong>Microcontrôleur</strong> : 180 MHz 32-bit ARM Cortex-M4.(120 MHz 32-bit ARM Cortex-M3 )*</li>
+				<li><strong>SoC(SoM)*</strong> : <a href="https://www.ghielectronics.com/catalog/product/501" target="_blank">G80</a>
+					<a href="https://www.ghielectronics.com/catalog/product/373" target="_blank">G120*</a>
+				</li>
+				<li><strong>RAM</strong> : 156 KB(2.87 MB)*.</li>
+				<li><strong>Flash</strong> : 256 KB (13.67 MB)*.</li>
+				<li><strong>E/S numériques</strong> : 53(60)*</li>
+				<li><strong>Entrées analogiques</strong> : 16(8)*</li>
+				<li><strong>Réseaux : </strong> Ethernet TCP/IP, WiFi, and SSL.</li>
+				<li><strong>Stockage</strong>: carte µSD</li>
+				<li><strong>IDE</strong> : Microsoft Visual Studio</li>
+				<li><strong>Framework</strong> : .NETMF 4.3</li>
+				<li><strong>Langages de programmation</strong> : C#, VB</li>
+			</ul>
+			<table>
+				<tr>
+					<td><img src="images/panda3.png" alt="PANDA III" /></td>
+					<td><img src="images/cobra3.png" alt="COBRA III" /></td>
+				</tr>
+				<tr>
+					<td align="center"><strong>PANDA III</strong></td>
+					<td align="center"><strong>COBRA III* (compatible Gadgeteer)</strong></td>
+				</tr>
+			</table>
+			<ul>
+				<li><strong>Sites à consulter</strong> : <a href="https://www.ghielectronics.com/" target="_blank">GHI ELECTRONICS</a>,
+					<a href="http://www.netmf.com/" target="_blank">NETMF</a></li>
+				<li><strong>Distributeurs</strong> : <a href="http://www.mouser.fr" target="_blank">Mouser Electronics</a></li>
+			</ul>
+
+			<hr>
+			<h3 id="LOG">2. LE LOGICIEL</h3>
+			<hr>
+
+			<h4 id="REP">2.1 Contenu du répertoire proposé au téléchargement</h4>
 			<p>Le répertoire proposé au téléchargement (au format zip ou tar.gz) contient la solution <strong>Netduino_EasyStepperMot</strong>				composée : </p>
 			<ul>
 				<li>Du projet <strong>EasyStepperDriver </strong>: le <strong>code source </strong>de la classe <em>EasyStepperDriver</em>.</li>
 				<li>Du projet <strong>TestEasyStepperMot</strong>: un exemple d'utilisation de cette classe.</li>
 			</ul>
-			<p><em>Remarques : La dernière version <strong>compilée</strong> de la classe <strong>EasyStepperDriver</strong> se situe dans la bibliothèque <strong>MicroToolsKit</strong> disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>.</em></p>
+			<hr>
+
+			<h4 id="NUGET">2.2 Le NuGet MicroToolsKit</h4>
+			<p>La dernière version <strong>compilée</strong> de la classe <strong>EasyStepperDriver</strong> se situe dans la bibliothèque <strong>MicroToolsKit</strong> disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>.</p>
 			<p align="center"><img src="images/NuGet-large.png" /></p>
 			<p><em>Installer cette bibliothèque dans le projet simplifie l'utilisation de cette classe.</em></p>
-			<hr/>
-			<h3>Description et utilisation de la classe EasyStepperDriver</h3>
+			<hr>
+
+			<h4 id="WIKI">2.3 Les Wikis</h4>
+			<ul>
+				<li><strong>Fascicules</strong> d'exemples de code pour les cartes <strong>Netduino</strong>. <a href="https://csharpembarquenetduino.wikispaces.com/5.+Les+fascicules+d%27exemples+cod%C3%A9s+en+CSharp" target="_blank">[lien]</a></li>
+				<li><strong>Fascicule</strong> d'exemples de code pour les cartes <strong>FEZ</strong>. <a href="https://csharpembarquefez.wikispaces.com/5.+Les+fascicules+d%27exemples+cod%C3%A9s+en+CSharp" target="_blank">[lien]</a></li>
+			</ul>
+			<hr>
+
+			<h4 id="DESC">2.4 Description et utilisation de la classe EasyStepperDriver</h3>
 			<hr>
 			<ul>
 				<li><strong>Rôle: </strong>Contrôler une carte de commande de moteur pas à pas EasyDriver 4.4.</li>
-				<li><strong>Assembly: </strong> <em>MicroToolsKit</em> (disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>)</li>
+				<li><strong>Assembly: </strong> <em>MicroToolsKit</em> (disponible sur
+					<a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/"
+						target="_blank">nuget.org</a>)</li>
 				<li><strong>Espace de noms: </strong><em>Microtoolskit.Hardware.MotorDrivers</em></li>
 			</ul>
 			<hr/>
 
 			<p><strong>Création d'un projet avec l'IDE Visual Studio</strong></p>
 			<ol>
-				<li><strong>Utiliser</strong> le gestionnaire de paquets NuGet pour <strong>ajouter</strong> l'assembly <strong>MicroToolsKit</strong> (disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>) dans le répertoire <em>Références</em>					du projet.(clic droit sur <em>Références</em> puis <em>Gérer les packages NuGet...</em>)</li>
-				<li><strong>Ajouter</strong> l'espace de noms <strong>Microtoolskit.Hardware.MotorDrivers</strong> dans l'en-tête du fichier source.</li>
+				<li><strong>Utiliser</strong> le gestionnaire de paquets NuGet pour <strong>ajouter</strong> l'assembly <strong>MicroToolsKit</strong>					(disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>) dans le
+					répertoire <em>Références</em> du projet.(clic droit sur <em>Références</em> puis <em>Gérer les packages NuGet...</em>)</li>
+				<li><strong>Ajouter</strong> l'espace de noms <strong>Microtoolskit.Hardware.MotorDrivers</strong> dans l'en-tête du fichier
+					source.</li>
 				<li><strong>Créer</strong> un objet en utilisant un des constructeurs <em>EasyStepperDriver</em>. Selon le besoin, la carte
 					peut être contrôlée à l'aide de 2, 3, 5 ou 6 des sorties numériques de la Netduino.</li>
 				<li><strong>Activer</strong> la carte avec la méthode <strong>WakeUp</strong>. (Utiliser éventuellement <strong>Sleep</strong>					pour réduire sa consommation)</li>
