@@ -18,4 +18,4 @@ This class is for a <strong>EasyDriver V4.4 card</strong>
 <hr>
 See <a href="http://webge.github.io/EasyStepperDriver/" target="_blank">EasyStepperDriver GitHub Pages</a> too get started.
 
-Maintened by <a href="mailto:philippemariano@gmail.com">Philippe Mariano</a>
+Maintened by <a href="mailto:philippemariano@gmail.com">WebGE</a>
