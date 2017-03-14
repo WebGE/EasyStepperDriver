@@ -50,6 +50,6 @@ I²C Bus, Netduino, FEZ, PANDA, COBRA, C#, NETMF, Visual Studio.
 
 <strong>To get started</strong>
 --------------------
-See <a href="http://webge.github.io/EasyStepperDriver/" target="_blank">EasyStepperDriver GitHub Pages</a> too get started.
+See <a href="http://webge.github.io/EasyStepperDriver/" target="_blank">EasyStepperDriver GitHub Pages</a>.
 
 <strong>Maintened by</strong> <a href="mailto:philippemariano@gmail.com">WebGE</a>
