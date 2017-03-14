@@ -1,21 +1,55 @@
 # EasyStepperDriver .NetMF Class
 
-Source code of the EasyStepperDriver <strong>NETMF class</strong> contained in the <a href="https://www.nuget.org/packages/WEBGE.Microtoolskit/" target="_blank">MicroToolsKit</a> <strong>library</strong>. Download at <a href="https://www.nuget.org" target="_blank">nuget.com</a>
+<strong>Description</strong>
+-------------------------------------
+Source code.
 
-This class is for a <strong>EasyDriver V4.4 card</strong>
+A <strong>.NETMF 4.3 class</strong> write for a <strong>A3967 EasyDriver Shield Stepper Motor Driver Module</strong>. 
 
+This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoolskit/" target="_blank">MicroToolsKit</a> <strong>library</strong>. Download at <a href="https://www.nuget.org" target="_blank">nuget.com</a>
 
-<strong>Tags</strong>: step by step motor, Netduino, FEZ, PANDA, COBRA, C#, NETMF, Visual Studio.
+ <img src="img/nuget.JPG" align="center" />
+ 
+<strong>Hardware</strong>
+---------------------
+<strong> Targets </strong>: Netduino, Netduino plus 2, Netduino 3, FEZ PANDA 3 et COBRA 3.
 
-<strong>Target</strong>: Netduino, Netduino plus 2, Netduino 3, FEZ PANDA 3 et COBRA 3.
+<strong>Software</strong>
+---------------------
+<ul>
+<li><strong>Language</strong> : C#</li>
+<li><strong>Framework used</strong> : .NETMF 4.3</li>
+<li><strong>IDE</strong> : Visual Studio Community 2015</li>
+<li><strong>xml</strong> : documentation inside class </li> 
+</ul>
 
-<strong>IDE</strong> : Visual Studio Community.
+<strong> Visual Studio solution</strong>
+-------------------------------------
+<ul>
+<li><strong>PCF8574</strong>
+<ul>
+<li><strong>PCF8574</strong> : .NetMF class</li>
+<img src="img/pcf8574.png" />
+<li><strong>Netduino</strong> : class test program (chenillard) for Netduino board</li>
+<li><strong>FezPanda</strong> : class test program (chenillard) for Fez Panda board</li>
+</ul>
+</li>
+</ul>
 
-<strong>Language</strong> : C#.
+<strong>Assembly</strong>
+--------------------------
+<img src="img/EasyStepperMotor.jpg" />
 
-<strong>Framework</strong> : .NETMF 4.3
+<strong>Video</strong>
+-------------------
+<a href="https://youtu.be/K_PtVVJPNFo" target="_blank">To see on Youtube</a>
 
-<hr>
+<strong>Keywords</strong>
+----------------------------
+I²C Bus, Netduino, FEZ, PANDA, COBRA, C#, NETMF, Visual Studio.
+
+<strong>To get started</strong>
+--------------------
 See <a href="http://webge.github.io/EasyStepperDriver/" target="_blank">EasyStepperDriver GitHub Pages</a> too get started.
 
-Maintened by <a href="mailto:philippemariano@gmail.com">WebGE</a>
+<strong>Maintened by</strong> <a href="mailto:philippemariano@gmail.com">WebGE</a>
