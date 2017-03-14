@@ -26,10 +26,10 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 <strong> Visual Studio solution</strong>
 -------------------------------------
 <ul>
-<li><strong>PCF8574</strong>
+<li><strong>EasyStepperDriver</strong>
 <ul>
-<li><strong>PCF8574</strong> : .NetMF class</li>
-<img src="img/pcf8574.png" />
+<li><strong>EasyStepperDriver</strong> : .NetMF class</li>
+<img src="img/EasyStepperDriverclass.png" />
 <li><strong>Netduino</strong> : class test program (chenillard) for Netduino board</li>
 <li><strong>FezPanda</strong> : class test program (chenillard) for Fez Panda board</li>
 </ul>
