@@ -39,4 +39,7 @@
     <Reference Include="Microsoft.SPOT.Native">
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="EasyStepperDriver.cd" />
+  </ItemGroup>
 </Project>
