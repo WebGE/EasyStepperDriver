@@ -1,4 +1,4 @@
-# EasyStepperDriver
+# EasyStepperDriver .NetMF Class
 
 Source code of the EasyStepperDriver <strong>NETMF class</strong> contained in the <a href="https://www.nuget.org/packages/WEBGE.Microtoolskit/" target="_blank">MicroToolsKit</a> <strong>library</strong>. Download at <a href="https://www.nuget.org" target="_blank">nuget.com</a>
 
