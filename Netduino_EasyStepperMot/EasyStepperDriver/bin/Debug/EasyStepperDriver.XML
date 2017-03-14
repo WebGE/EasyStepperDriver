@@ -4,6 +4,36 @@
         <name>EasyStepperDriver</name>
     </assembly>
     <members>
+        <member name="P:ToolBoxes.EasyStepperDriver.Steps">
+            <summary>
+            Get Steps
+            </summary>
+        </member>
+        <member name="P:ToolBoxes.EasyStepperDriver.StepDirection">
+            <summary>
+            Get direction
+            </summary>      
+        </member>
+        <member name="P:ToolBoxes.EasyStepperDriver.StepMode">
+            <summary>
+            Get Mode
+            </summary>
+        </member>
+        <member name="P:ToolBoxes.EasyStepperDriver.StepDelay">
+            <summary>
+            Get time between two step
+            </summary>
+        </member>
+        <member name="P:ToolBoxes.EasyStepperDriver.IsDriverSleep">
+            <summary>
+            Get if Sleep or not
+            </summary>
+        </member>
+        <member name="P:ToolBoxes.EasyStepperDriver.IsOutputsEnable">
+            <summary>
+            Get if Enable or Disable
+            </summary>
+        </member>
         <member name="M:ToolBoxes.EasyStepperDriver.#ctor(Microsoft.SPOT.Hardware.Cpu.Pin,Microsoft.SPOT.Hardware.Cpu.Pin)">
             <summary>
             Creates an instance of the driver, that only lets you move and choose direction.
@@ -82,36 +112,6 @@
             Set pins MS1 and MS2 
             </summary>
             <param name="mode"></param>
-        </member>
-        <member name="P:ToolBoxes.EasyStepperDriver.Steps">
-            <summary>
-            Get Steps
-            </summary>
-        </member>
-        <member name="P:ToolBoxes.EasyStepperDriver.StepDirection">
-            <summary>
-            Get direction
-            </summary>      
-        </member>
-        <member name="P:ToolBoxes.EasyStepperDriver.StepMode">
-            <summary>
-            Get Mode
-            </summary>
-        </member>
-        <member name="P:ToolBoxes.EasyStepperDriver.StepDelay">
-            <summary>
-            Get time between two step
-            </summary>
-        </member>
-        <member name="P:ToolBoxes.EasyStepperDriver.IsDriverSleep">
-            <summary>
-            Get if Sleep or not
-            </summary>
-        </member>
-        <member name="P:ToolBoxes.EasyStepperDriver.IsOutputsEnable">
-            <summary>
-            Get if Enable or Disable
-            </summary>
         </member>
         <member name="T:ToolBoxes.EasyStepperDriver.Direction">
             <summary>
