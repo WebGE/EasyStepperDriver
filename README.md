@@ -1,4 +1,4 @@
-# EasyStepperDriver .NetMF Class
+# EasyStepperDriver
 
 <strong>Description</strong>
 -------------------------------------
