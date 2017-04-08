@@ -48,6 +48,10 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 ----------------------------
 I²C Bus, Netduino, FEZ, PANDA, COBRA, C#, NETMF, Visual Studio.
 
+<strong>Tested on</strong>
+-------------------
+Fez Panda III, Netduino plus 2
+
 <strong>To get started</strong>
 --------------------
 See <a href="http://webge.github.io/EasyStepperDriver/" target="_blank">EasyStepperDriver GitHub Pages</a>.
