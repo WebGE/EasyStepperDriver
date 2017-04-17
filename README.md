@@ -46,7 +46,7 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 
 <strong>Keywords</strong>
 ----------------------------
-I²C Bus, Netduino, FEZ, PANDA, COBRA, C#, NETMF, Visual Studio.
+GPIO, Netduino, FEZ, PANDA, COBRA, C#, NETMF, Visual Studio.
 
 <strong>Tested on</strong>
 -------------------
