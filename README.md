@@ -29,7 +29,7 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 <li><strong>EasyStepperDriver</strong>
 <ul>
 <li><strong>EasyStepperDriver</strong> : .NetMF class</li>
-<img src="img/EasyStepperDriverclass.png" />
+<img src="img/EasyStepperDriverClass.png" />
 <li><strong>Netduino</strong> : class test program for Netduino board</li>
 <li><strong>FezPanda</strong> : class test program for Fez Panda board</li>
 </ul>
