@@ -30,7 +30,7 @@ namespace testMicroToolskit
                 /// <summary>
                 /// Directions are Forward or Backward
                 /// </summary>
-                public enum Direction
+                public enum Direction : byte
                 {
                     Forward,
                     Backward
@@ -38,7 +38,7 @@ namespace testMicroToolskit
                 /// <summary>
                 /// Modes are Full, Half, Quarter, OneEighth
                 /// </summary> 
-                public enum Mode
+                public enum Mode : byte
                 {
                     Full,
                     Half,
@@ -87,13 +87,17 @@ namespace testMicroToolskit
                 }
 
                 /// <summary>
-                /// Get time between two step
+                /// Get or set time between two step
                 /// </summary>
                 public int StepDelay
                 {
                     get
                     {
                         return _StepDelay;
+                    }
+                    set
+                    {
+                        _StepDelay = value;
                     }
 
                 }
