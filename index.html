@@ -206,8 +206,8 @@
 				<li><strong>Créer</strong> un objet en utilisant un des constructeurs <em>EasyStepperDriver</em>. Selon le besoin, la carte
 					peut être contrôlée à l'aide de 2, 3, 4, 5 ou 6 sorties numériques.</li>
 				<li><strong>Commander</strong> le moteur en rotation avec la méthode <strong>Turn.</strong></li>
-				<li><strong>Optionnel : </strong>activer la carte avec la méthode <strong>WakeUp</strong> si l'entrée /Enable est commandée. (Utiliser éventuellement <strong>Sleep</strong>					pour réduire sa consommation)</li>
-				Désactiver la commande du moteur à l'arrêt (si possible) avec la méthode <strong>DisableOutputs</strong> pour limiter
+				<li><strong>Optionnel : </strong>activer la carte avec la méthode <strong>WakeUp</strong> si la broche Sleep est connectée. (Utiliser éventuellement la méthode <strong>Sleep</strong>					pour réduire sa consommation)</li>
+				Désactiver la commande du moteur à l'arrêt (si la broche /Enable est connectée) avec la méthode <strong>DisableOutputs</strong> pour limiter
 					son échauffement. Ne pas oublier de réactiver les sorties avec <strong>EnableOutputs</strong>.
 				</li>
 			</ol>
