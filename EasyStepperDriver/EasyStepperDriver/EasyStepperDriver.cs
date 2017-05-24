@@ -12,7 +12,7 @@ namespace testMicroToolskit
             /// A class to manage the EasyDriver v4.4. An Open Source Hardware Stepper Motor Drive Project.
             /// </summary>
             /// <remarks>
-            /// Thanks to Gus. GHI Electronics. You may have some additional information about this class on http://webge.github.io/EasyStepperDriver/
+            /// Thanks to Gus (GHI Electronics team). You may have some additional information about this class on http://webge.github.io/EasyStepperDriver/
             /// </remarks>
             public class EasyStepperDriver
             {
@@ -138,7 +138,7 @@ namespace testMicroToolskit
                 }
 
                 /// <summary>
-                /// Creates an instance of the driver, that only lets you move, choose direction and put the controller to sleep
+                /// Creates an instance of the driver, that only lets you move, choose direction and put the controller to sleep.
                 /// </summary>
                 /// <param name="DirectionPin">(DIR) This needs to be a 0V to 5V (or 0V to 3.3V if you've set your Easy Driver up that way) digital signal.
                 /// The level if this signal (high/low) is sampled on each rising edge of STEP to determine which direction to take the step (or microstep).</param>
@@ -150,7 +150,7 @@ namespace testMicroToolskit
                 {
                     _DirectionPin = new OutputPort(DirectionPin, false); // Forward
                     _StepPin = new OutputPort(StepPin, false);
-                    _SleepPin = new OutputPort(SleepPin, false); // Sleep activé
+                    _SleepPin = new OutputPort(SleepPin, false); // Sleep enable
                 }
 
                 /// <summary>
@@ -166,7 +166,7 @@ namespace testMicroToolskit
                 {
                     _DirectionPin = new OutputPort(DirectionPin, true);  // Forward
                     _StepPin = new OutputPort(StepPin, false);
-                    _StepModePinOne = new OutputPort(StepModePinOne, true); // Huitième de pas
+                    _StepModePinOne = new OutputPort(StepModePinOne, true); // OneEighth step
                     _StepModePinTwo = new OutputPort(StepModePinTwo, true);
                 }
 
@@ -185,9 +185,9 @@ namespace testMicroToolskit
                 {
                     _DirectionPin = new OutputPort(DirectionPin, false); // Forward
                     _StepPin = new OutputPort(StepPin, false);
-                    _StepModePinOne = new OutputPort(StepModePinOne, true); // Huitième de pas
+                    _StepModePinOne = new OutputPort(StepModePinOne, true); //  OneEighth step
                     _StepModePinTwo = new OutputPort(StepModePinTwo, true);
-                    _SleepPin = new OutputPort(SleepPin, false); // Sleep acivé
+                    _SleepPin = new OutputPort(SleepPin, false); // Sleep enable
                 }
 
                 /// <summary>
@@ -206,16 +206,16 @@ namespace testMicroToolskit
                 {
                     _DirectionPin = new OutputPort(DirectionPin, false); // Forward
                     _StepPin = new OutputPort(StepPin, false);
-                    _StepModePinOne = new OutputPort(StepModePinOne, true); // Huitième de pas
+                    _StepModePinOne = new OutputPort(StepModePinOne, true); //  OneEighth step
                     _StepModePinTwo = new OutputPort(StepModePinTwo, true);
-                    _SleepPin = new OutputPort(SleepPin, false); // Sleep activé
-                    _EnablePin = new OutputPort(EnablePin, false); // Activation des sorties
+                    _SleepPin = new OutputPort(SleepPin, false); // Sleep enable
+                    _EnablePin = new OutputPort(EnablePin, false); // Outputs enable
                 }
 
                 /// <summary>
                 /// Put the stepper driver to sleep mode
                 /// </summary>
-                /// <returns>Boolean : True if sleep</returns>
+                /// <returns>Boolean : True if sleep, false otherwise</returns>
                 public bool Sleep()
                 {
                     if (_SleepPin != null)
@@ -230,7 +230,7 @@ namespace testMicroToolskit
                 /// <summary>
                 /// Wake up the stepper driver
                 /// </summary>
-                /// <returns>Boolean : True if WakeUp </returns>
+                /// <returns>Boolean : True if WakeUp, false otherwise </returns>
                 public bool WakeUp()
                 {
                     if (_SleepPin != null)
@@ -245,7 +245,7 @@ namespace testMicroToolskit
                 /// <summary>
                 /// Enable the stepper driver outputs
                 /// </summary>
-                /// <returns>Boolean : True if Outputs are enable </returns>
+                /// <returns>Boolean : True if Outputs are enable, false otherwise </returns>
                 public bool EnableOutputs()
                 {
                     if (_EnablePin != null)
@@ -260,7 +260,7 @@ namespace testMicroToolskit
                 /// <summary>
                 /// Disable the stepper driver outputs
                 /// </summary>
-                /// <returns>Boolean : True if Outputs are disable</returns>
+                /// <returns>Boolean : True if Outputs are disable, false otherwise</returns>
                 public bool DisableOutputs()
                 {
                     if (_EnablePin != null)
