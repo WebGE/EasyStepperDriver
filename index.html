@@ -423,6 +423,8 @@ namespace PANDA_3_EasyStepperMot
 							Retourne ou fixe le sens de rotation: <br/>
 							<strong>0: </strong>horaire<br/>
 							<strong>1: </strong>anti-horaire
+							<p><strong>Exemple</strong></p><br>
+							<em>stepper.StepDirection = EasyStepperDriver.Direction.Backward;</em>
 						</td>
 					</tr>
 					<tr>
@@ -475,6 +477,8 @@ namespace PANDA_3_EasyStepperMot
 						<td>Commande du moteur pas à pas:<br/>
 							<strong>- steps: </strong>Nombre de pas à effectuer<br/>
 							<strong>- delay: </strong> durée d'un pas (<strong>2ms par défaut</strong>)
+							<p><strong>Exemple</strong></p><br>
+							<em>stepper.Turn(25);</em>
 						</td>
 					</tr>
 					<tr>
@@ -485,6 +489,8 @@ namespace PANDA_3_EasyStepperMot
 							<strong>- mode: </strong>Mode de fonctionnement (Full, Half, Quarter, OneEighth)<br/>
 							<strong>- direction: </strong>Sens de rotation (Forward, Backward)<br/>
 							<strong>- delay: </strong> durée d'un pas (<strong>2ms par défaut</strong>)
+							<p><strong>Exemple</strong></p><br>
+							<em>stepper.Turn(nbpas, EasyStepperDriver.Direction.Forward, delay, EasyStepperDriver.Mode.Full);</em>
 						</td>
 					</tr>
 					<tr>
