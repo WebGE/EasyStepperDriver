@@ -227,26 +227,26 @@ using Microtoolskit.Hardware.MotorDrivers;
 namespace PANDA_3_EasyStepperMot
 {
     public class Program
-	{ 
+    {
         public static void Main()
-        {  
+        {
             // N=200 pas - U=12V - C=200g/cm - EasyStepperMotor v4.4 
             var time = 2000; UInt16 delay = 2; UInt32 nbpas = 200;
             var stepper = new EasyStepperDriver(FEZPandaIII.Gpio.D13, FEZPandaIII.Gpio.D12, FEZPandaIII.Gpio.D10, FEZPandaIII.Gpio.D11);
 
             while (true)
             {
-				// 45° for ITC-VNC-1 motor
-				stepper.StepMode = EasyStepperDriver.Mode.Full; stepper.StepDirection = EasyStepperDriver.Direction.Backward;
+                // 45° for ITC-VNC-1 motor
+                stepper.StepMode = EasyStepperDriver.Mode.Full; stepper.StepDirection = EasyStepperDriver.Direction.Backward;
                 stepper.Turn(25);
-				Thread.Sleep(1000);
+                Thread.Sleep(1000);
 
-				// 360° for ITC-VNC-1 motor
-				stepper.Turn(nbpas, EasyStepperDriver.Direction.Forward, delay, EasyStepperDriver.Mode.Full);
-				Thread.Sleep(1000);
-			}
-		}
-	}
+                // 360° for ITC-VNC-1 motor
+                stepper.Turn(nbpas, EasyStepperDriver.Direction.Forward, delay, EasyStepperDriver.Mode.Full);
+                Thread.Sleep(1000);
+            }
+        }
+    }
 }
 
 				</pre>
