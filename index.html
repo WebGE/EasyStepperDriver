@@ -308,8 +308,8 @@ namespace PANDA_3_EasyStepperMot
 									la carte EasyDriver</li>
 							</ul>
 							<p><strong>Configuration par défaut: </strong>Forward, mode huitième de pas</p>
-							<p><strong>Exemple</strong></p>
-							<p><em>var stepper = new EasyStepperDriver(FEZPandaIII.Gpio.D13, FEZPandaIII.Gpio.D12, FEZPandaIII.Gpio.D10, FEZPandaIII.Gpio.D11);</em></p>
+							<p><strong>Exemple</strong></p><br>
+							<em>var stepper = new EasyStepperDriver(FEZPandaIII.Gpio.D13, FEZPandaIII.Gpio.D12, FEZPandaIII.Gpio.D10, FEZPandaIII.Gpio.D11);</em>
 						</td>
 					</tr>
 					<tr>
@@ -433,6 +433,8 @@ namespace PANDA_3_EasyStepperMot
 							<strong>1: </strong>demi pas<br/>
 							<strong>2: </strong>quart de pas<br/>
 							<strong>3: </strong>huitième de pas (<strong>mode par défaut</strong>)
+							<p><strong>Exemple</strong></p><br>
+							<em>stepper.StepMode = EasyStepperDriver.Mode.Full; </em>
 						</td>
 					</tr>
 					<tr>
