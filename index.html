@@ -231,7 +231,7 @@ namespace PANDA_3_EasyStepperMot
         public static void Main()
         {
             // N=200 pas - U=12V - C=200g/cm - EasyStepperMotor v4.4 
-            var time = 2000; UInt16 delay = 2; UInt32 nbpas = 200;
+            UInt16 delay = 2; UInt32 nbpas = 200;
             var stepper = new EasyStepperDriver(FEZPandaIII.Gpio.D13, FEZPandaIII.Gpio.D12, FEZPandaIII.Gpio.D10, FEZPandaIII.Gpio.D11);
 
             while (true)
@@ -308,6 +308,8 @@ namespace PANDA_3_EasyStepperMot
 									la carte EasyDriver</li>
 							</ul>
 							<p><strong>Configuration par défaut: </strong>Forward, mode huitième de pas</p>
+							<p><strong>Exemple</strong></p>
+							<p><em>var stepper = new EasyStepperDriver(FEZPandaIII.Gpio.D13, FEZPandaIII.Gpio.D12, FEZPandaIII.Gpio.D10, FEZPandaIII.Gpio.D11);</em></p>
 						</td>
 					</tr>
 					<tr>
