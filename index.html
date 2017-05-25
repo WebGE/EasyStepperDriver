@@ -422,7 +422,7 @@ namespace PANDA_3_EasyStepperMot
 						<td>
 							Retourne ou fixe le sens de rotation: <br/>
 							<strong>0: </strong>horaire<br/>
-							<strong>1: </strong>anti-horaire <br>
+							<strong>1: </strong>anti-horaire <br> <br>
 							<strong>Exemple</strong><br>
 							<em>stepper.StepDirection = EasyStepperDriver.Direction.Backward;</em>
 						</td>
@@ -434,7 +434,7 @@ namespace PANDA_3_EasyStepperMot
 							<strong>0: </strong>pas entier<br/>
 							<strong>1: </strong>demi pas<br/>
 							<strong>2: </strong>quart de pas<br/>
-							<strong>3: </strong>huitième de pas (<strong>mode par défaut</strong>) <br>
+							<strong>3: </strong>huitième de pas (<strong>mode par défaut</strong>) <br>  <br>
 							<strong>Exemple</strong><br>
 							<em>stepper.StepMode = EasyStepperDriver.Mode.Full; </em>
 						</td>
@@ -476,7 +476,7 @@ namespace PANDA_3_EasyStepperMot
 						<td><strong>void Turn</strong>(<strong>UInt32</strong> <em>steps</em>, <strong>int</strong> <em>[delay=2]</em>)</td>
 						<td>Commande du moteur pas à pas:<br/>
 							<strong>- steps: </strong>Nombre de pas à effectuer<br/>
-							<strong>- delay: </strong> durée d'un pas (<strong>2ms par défaut</strong>) <br>
+							<strong>- delay: </strong> durée d'un pas (<strong>2ms par défaut</strong>) <br> <br>
 							<strong>Exemple</strong><br>
 							<em>stepper.Turn(25);</em>
 						</td>
@@ -488,7 +488,7 @@ namespace PANDA_3_EasyStepperMot
 							<strong>- steps: </strong>Nombre de pas à effectuer<br/>
 							<strong>- mode: </strong>Mode de fonctionnement (Full, Half, Quarter, OneEighth)<br/>
 							<strong>- direction: </strong>Sens de rotation (Forward, Backward)<br/>
-							<strong>- delay: </strong> durée d'un pas (<strong>2ms par défaut</strong>) <br>
+							<strong>- delay: </strong> durée d'un pas (<strong>2ms par défaut</strong>) <br> <br>
 							<strong>Exemple</strong><br>
 							<em>stepper.Turn(nbpas, EasyStepperDriver.Direction.Forward, delay, EasyStepperDriver.Mode.Full);</em>
 						</td>
