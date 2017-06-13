@@ -43,6 +43,9 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 <strong>Video to see on Youtube</strong>
 -------------------
 <a href="https://youtu.be/K_PtVVJPNFo" target="_blank">Mechanical reduction</a>
+<a href="https://youtu.be/l_M70CIIXU0" target="_blank">Ping pong ball thrower 1/a>
+<a href="https://youtu.be/4_QfgJS_Ang" target="_blank">Ping pong ball thrower 2</a>
+<a href="https://youtu.be/66fcVjNp61Q" target="_blank">Ping pong ball thrower 3/a>
 
 <strong>Keywords</strong>
 ----------------------------
