@@ -245,7 +245,7 @@ namespace PANDA_3_EasyStepperMot
             {
                 // 45° for ITC-VNC-1 motor
                 stepper.StepMode = EasyStepperDriver.Mode.Full; stepper.StepDirection = EasyStepperDriver.Direction.Backward;
-                stepper.Turn(25);
+                stepper.Turn(25,delay);
                 Thread.Sleep(1000);
 
                 // 360° for ITC-VNC-1 motor
