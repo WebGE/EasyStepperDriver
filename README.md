@@ -26,9 +26,9 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 <strong>Visual Studio solution</strong>
 -------------------------------------
 <ul>
-<li><strong>EasyStepperDriver (source code)</strong>
+<li><strong>EasyStepperDriver </strong>
 <ul>
-<li><strong>EasyStepperDriver</strong> : .NetMF class</li>
+<li><strong>EasyStepperDriver</strong> : .NetMF v4.3 class (source code)</li>
 <img src="img/EasyStepperDriverClass.png" />
 <li><strong>Netduino</strong> : class test program for Netduino board</li>
 <li><strong>FezPanda</strong> : class test program for Fez Panda board</li>
@@ -69,15 +69,15 @@ Fez Panda III, Netduino plus 2, BrainPad
 --------------------
 See <a href="http://webge.github.io/EasyStepperDriver/" target="_blank">EasyStepperDriver GitHub Page</a> (in French).
 
-<strong>Wiki</strong>
+<strong>Wikis</strong>
 --------------------
-<p><a href="https://csharpembarquenetduino.wikispaces.com/Home" target="_blank">Netduino et FEZ</a> (in French).</p>
-<p><a href="https://csharpembarquebrainpad.wikispaces.com/Home" target="_blank">BrainPad</a> (in French).</p>
+- <a href="https://csharpembarquenetduino.wikispaces.com/Home" target="_blank">Netduino et FEZ</a> (in French).
+- <a href="https://csharpembarquebrainpad.wikispaces.com/Home" target="_blank">BrainPad</a> (in French).
 
-<strong>News feed on Google+</strong>
+<strong>News feeds on Google+</strong>
 --------------------
-<p><a href="https://plus.google.com/collection/oaaJX" target="_blank">Netduino et FEZ</a> (in French).</p>
-<p><a href="https://plus.google.com/collection/sEHQME" target="_blank">BrainPad</a> (in French).</p>
+- <a href="https://plus.google.com/collection/oaaJX" target="_blank">Netduino et FEZ</a> (in French).
+- <a href="https://plus.google.com/collection/sEHQME" target="_blank">BrainPad</a> (in French).
 
 <strong>Project site</strong>
 --------------------
