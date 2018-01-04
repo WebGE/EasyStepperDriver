@@ -42,7 +42,7 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 --------------------------
 <img src="img/EasyStepperMotor.jpg" />
 
-<strong>Video to see on Youtube</strong>
+<strong>Videos on Youtube</strong>
 -------------------
 <ul>
 <li><a href="https://youtu.be/Kc1_DE5p3R0" target="_blank">BrainPad and STEPPER click</a></li>
