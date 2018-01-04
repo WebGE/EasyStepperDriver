@@ -67,6 +67,7 @@ See <a href="http://webge.github.io/EasyStepperDriver/" target="_blank">EasyStep
 <strong>Wiki</strong>
 --------------------
 <p><a href="https://csharpembarquenetduino.wikispaces.com/Home" target="_blank">Netduino et FEZ</a> (in French).</p>
+<p><a href="https://csharpembarquebrainpad.wikispaces.com/Home" target="_blank">BrainPad</a> (in French).</p>
 
 <strong>News feed on Google+</strong>
 --------------------
