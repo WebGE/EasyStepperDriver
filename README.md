@@ -18,20 +18,22 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 ---------------------
 <ul>
 <li><strong>Language</strong> : C#</li>
-<li><strong>Framework used</strong> : .NETMF 4.3</li>
-<li><strong>IDE</strong> : Visual Studio Community 2015</li>
+<li><strong>Framework used</strong> : .NETMF v4.3</li>
+<li><strong>IDE</strong> : Visual Studio Community 2013 (2015)</li>
 <li><strong>xml</strong> : documentation inside class </li> 
 </ul>
 
-<strong> Visual Studio solution</strong>
+<strong>Visual Studio solution</strong>
 -------------------------------------
 <ul>
-<li><strong>EasyStepperDriver</strong>
+<li><strong>EasyStepperDriver (source code)</strong>
 <ul>
 <li><strong>EasyStepperDriver</strong> : .NetMF class</li>
 <img src="img/EasyStepperDriverClass.png" />
 <li><strong>Netduino</strong> : class test program for Netduino board</li>
 <li><strong>FezPanda</strong> : class test program for Fez Panda board</li>
+<li><strong>BrainPad</strong> : class test program for BrainPad board</li>
+<li><strong>BrainPadLibrary</strong> : class library for BrainPad board</li>
 </ul>
 </li>
 </ul>
@@ -43,6 +45,7 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 <strong>Video to see on Youtube</strong>
 -------------------
 <ul>
+<li><a href="https://youtu.be/Kc1_DE5p3R0" target="_blank">BrainPad and STEPPER click</a></li>
 <li><a href="https://youtu.be/K_PtVVJPNFo" target="_blank">Mechanical reduction</a></li>
 <li><a href="https://youtu.be/l_M70CIIXU0" target="_blank">Ping pong ball thrower 1</a></li>
 <li><a href="https://youtu.be/4_QfgJS_Ang" target="_blank">Ping pong ball thrower 2</a></li>
@@ -51,11 +54,11 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 
 <strong>Keywords</strong>
 ----------------------------
-GPIO, Netduino, FEZ, PANDA, COBRA, C#, NETMF, Visual Studio.
+GPIO, Netduino, FEZ, PANDA, COBRA, BrainPad, C#, NETMF, Visual Studio.
 
 <strong>Tested on</strong>
 -------------------
-Fez Panda III, Netduino plus 2
+Fez Panda III, Netduino plus 2, BrainPad
 
 <strong>To get started</strong>
 --------------------
@@ -63,7 +66,10 @@ See <a href="http://webge.github.io/EasyStepperDriver/" target="_blank">EasyStep
 
 <strong>Wiki</strong>
 --------------------
-See <a href="https://csharpembarquenetduino.wikispaces.com/Home" target="_blank">Netduino et FEZ</a> (in French).
+See 
+<p><a href="https://csharpembarquenetduino.wikispaces.com/Home" target="_blank">Netduino et FEZ</a> (in French).</p>
+<p><a href="https://csharpembarquebrainpad.wikispaces.com/Home" target="_blank">BrainPad</a> (in French).</p>
+
 
 <strong>Project site</strong>
 --------------------
