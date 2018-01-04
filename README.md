@@ -42,8 +42,8 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 --------------------------
 <table>
 <tr>
-<td><img src="img/EasyStepperMotor.jpg"/></td>
 <td><img src="img/STEPPERclickm.jpg" /></td>
+<td><img src="img/EasyStepperMotor.jpg"/></td>
 </tr>
 </table>
 
