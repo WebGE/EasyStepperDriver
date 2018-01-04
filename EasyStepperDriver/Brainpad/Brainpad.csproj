@@ -45,6 +45,7 @@
   <ItemGroup>
     <Reference Include="GHI.Pins, Version=4.3.8.1, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.SPOT.Hardware" />
+    <Reference Include="Microsoft.SPOT.Hardware.SerialPort" />
     <Reference Include="Microsoft.SPOT.Native" />
     <Reference Include="MicroToolsKit, Version=1.4.4.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\WebGE.MicroToolsKit.1.4.4\lib\netmf43\MicroToolsKit.dll</HintPath>
@@ -59,13 +60,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\BrainpadLibrary\BrainpadLibrary.csproj">
       <Project>{46B13313-F5CC-4D02-93BA-51D3C982D9EC}</Project>
       <Name>BrainpadLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Condition="EXISTS('$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets')" Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
   <Import Condition="!EXISTS('$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets')" Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

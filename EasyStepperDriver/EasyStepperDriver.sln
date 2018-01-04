@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Netduino", "Netduino\Netdui
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FezPanda", "FezPanda\FezPanda.csproj", "{064A917B-E04E-4385-84CD-2247EC2760D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brainpad", "Brainpad\Brainpad.csproj", "{6A0EDE5C-2EBF-42E9-8F55-9521A1BA55DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainpadLibrary", "BrainpadLibrary\BrainpadLibrary.csproj", "{46B13313-F5CC-4D02-93BA-51D3C982D9EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,16 @@ Global
 		{064A917B-E04E-4385-84CD-2247EC2760D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{064A917B-E04E-4385-84CD-2247EC2760D1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{064A917B-E04E-4385-84CD-2247EC2760D1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6A0EDE5C-2EBF-42E9-8F55-9521A1BA55DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A0EDE5C-2EBF-42E9-8F55-9521A1BA55DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A0EDE5C-2EBF-42E9-8F55-9521A1BA55DF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6A0EDE5C-2EBF-42E9-8F55-9521A1BA55DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A0EDE5C-2EBF-42E9-8F55-9521A1BA55DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A0EDE5C-2EBF-42E9-8F55-9521A1BA55DF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{46B13313-F5CC-4D02-93BA-51D3C982D9EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B13313-F5CC-4D02-93BA-51D3C982D9EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B13313-F5CC-4D02-93BA-51D3C982D9EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B13313-F5CC-4D02-93BA-51D3C982D9EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
