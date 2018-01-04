@@ -12,7 +12,7 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
  
 <strong>Hardware</strong>
 ---------------------
-<strong> Targets </strong>: Netduino, Netduino plus 2, Netduino 3, FEZ PANDA 3, COBRA 3 and BrainPad.
+<strong> Targets </strong>: Netduino, Netduino2 plus, Netduino 3, FEZ PANDA 3, COBRA 3 and BrainPad.
 
 <strong>Software</strong>
 ---------------------
@@ -81,7 +81,7 @@ See <a href="http://webge.github.io/EasyStepperDriver/" target="_blank">EasyStep
 
 <strong>Project site</strong>
 --------------------
-<a href ="https://csharpembarquenetduino.wikispaces.com/6.+MicroToolsKit+library">MicroToolsKit library</a> (in English).
+- <a href ="https://csharpembarquenetduino.wikispaces.com/6.+MicroToolsKit+library">MicroToolsKit library</a> (in English).
 <hr>
 
 <strong>Maintened by</strong> <a href="mailto:philippemariano@gmail.com">WebGE</a>
