@@ -42,11 +42,10 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 --------------------------
 <table>
 <tr>
-<td><img src="img/EasyStepperMotor.jpg" /></td>
+<td><img src="img/EasyStepperMotor.jpg"/></td>
 <td><img src="img/STEPPER click.jpg" /></td>
 </tr>
 </table>
-<img src="img/EasyStepperMotor.jpg" />
 
 <strong>Videos on Youtube</strong>
 -------------------
