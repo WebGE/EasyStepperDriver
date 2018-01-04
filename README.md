@@ -63,7 +63,7 @@ GPIO, Netduino, FEZ, PANDA, COBRA, BrainPad, C#, NETMF, Visual Studio.
 
 <strong>Tested on</strong>
 -------------------
-Fez Panda III, Netduino plus 2, BrainPad
+Fez Panda III, Netduino2 plus, BrainPad
 
 <strong>To get started</strong>
 --------------------
