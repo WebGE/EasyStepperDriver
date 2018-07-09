@@ -65,6 +65,10 @@ GPIO, Netduino, FEZ, PANDA, COBRA, BrainPad, C#, NETMF, Visual Studio.
 -------------------
 Fez Panda III, Netduino2 plus, BrainPad
 
+<strong>Todo list</strong>
+-------------------
+any
+
 <strong>To get started</strong>
 --------------------
 See <a href="http://webge.github.io/EasyStepperDriver/" target="_blank">EasyStepperDriver GitHub Page</a> (in French).
