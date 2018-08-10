@@ -1,45 +1,38 @@
 # EasyStepperDriver
 
-<strong>Description</strong>
--------------------------------------
+**Description**
+----
 Source code.
 
-A <strong>.NETMF v4.3 class</strong> write for a <strong>A3967 EasyDriver Shield Stepper Motor Driver Module</strong>. 
+A **.NETMF v4.3 class** write for a **EasyDriver Shield Stepper Motor Driver Module**. 
 
-This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoolskit/" target="_blank">MicroToolsKit</a> <strong>library</strong>. Download at <a href="https://www.nuget.org" target="_blank">nuget.com</a>
+This class is also in the [MicroToolsKit]("https://www.nuget.org/packages/WEBGE.Microtoolskit/")  **library**. Download at [nuget.com]("https://www.nuget.org").
 
- <img src="img/nuget.JPG" align="center" />
- 
-<strong>Hardware</strong>
----------------------
-<strong> Targets </strong>: Netduino, Netduino2 plus, Netduino 3, FEZ PANDA 3, COBRA 3 and BrainPad.
+ ![](img/nuget.JPG)
 
-<strong>Software</strong>
----------------------
-<ul>
-<li><strong>Language</strong> : C#</li>
-<li><strong>Framework used</strong> : .NETMF v4.3</li>
-<li><strong>IDE</strong> : Visual Studio Community 2013 (2015)</li>
-<li><strong>xml</strong> : documentation inside class </li> 
-</ul>
+**Hardware**
+----
+**Targets**: Netduino, Netduino2 plus, Netduino 3, FEZ PANDA 3 and COBRA 3.
 
-<strong>Visual Studio solution</strong>
--------------------------------------
-<ul>
-<li><strong>EasyStepperDriver </strong>
-<ul>
-<li><strong>EasyStepperDriver</strong> : .NetMF class</li>
-<img src="img/EasyStepperDriverClass.png" />
-<li><strong>Netduino</strong> : class test program for Netduino board</li>
-<li><strong>FezPanda</strong> : class test program for Fez Panda board</li>
-<li><strong>BrainPad</strong> : class test program for BrainPad board</li>
-<li><strong>BrainPadLibrary</strong> : class library for BrainPad board</li>
-</ul>
-</li>
-</ul>
+**Software**
+----
+* **Language** : C#
+* **Framework used** : .NETMF 4.3
+* **IDE** : Visual Studio Community 2013 (2015)
+* **xml** : documentation inside class
 
-<strong>Assembly</strong>
---------------------------
+**Visual Studio solution**
+----
+* **EasyStepperDriver**
+  * **EasyStepperDriver**: .NetMF class
+
+![](img/EasyStepperDriverClass.png)
+* **Netduino** : class test program for Netduino board
+* **FezPanda** : class test program for Fez Panda board
+* **BrainPadLibrary** : class library for BrainPad board
+
+ **Assembly**
+----
 <table>
 <tr>
 <td><img src="img/STEPPERclickm.jpg" /></td>
@@ -47,43 +40,41 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 </tr>
 </table>
 
-<strong>Videos on Youtube</strong>
--------------------
-<ul>
-<li><a href="https://youtu.be/Kc1_DE5p3R0" target="_blank">BrainPad and STEPPER click</a></li>
-<li><a href="https://youtu.be/K_PtVVJPNFo" target="_blank">Mechanical reduction</a></li>
-<li><a href="https://youtu.be/l_M70CIIXU0" target="_blank">Ping pong ball thrower 1</a></li>
-<li><a href="https://youtu.be/4_QfgJS_Ang" target="_blank">Ping pong ball thrower 2</a></li>
-<li><a href="https://youtu.be/66fcVjNp61Q" target="_blank">Ping pong ball thrower 3</a></li>
-</ul>
+**Video**
+----
+* [BrainPad and STEPPER click](https://youtu.be/Kc1_DE5p3R0)
+* [Mechanical reduction](https://youtu.be/K_PtVVJPNFo)
+* [Ping pong ball thrower 1](https://youtu.be/l_M70CIIXU0)
+* [Ping pong ball thrower 2](https://youtu.be/4_QfgJS_Ang)
+* [Ping pong ball thrower 3](https://youtu.be/66fcVjNp61Q)
 
-<strong>Keywords</strong>
-----------------------------
+**Keywords**
+----
 GPIO, Netduino, FEZ, PANDA, COBRA, BrainPad, C#, NETMF, Visual Studio.
 
-<strong>Tested on</strong>
--------------------
+**Tested on**
+----
 Fez Panda III, Netduino2 plus, BrainPad
 
-<strong>Todo list</strong>
--------------------
+**Todo list**
+----
 any
 
-<strong>To get started</strong>
---------------------
-See <a href="http://webge.github.io/EasyStepperDriver/" target="_blank">EasyStepperDriver GitHub Page</a> (in French).
+**To get started**
+----
+See [EasyStepperDriver GitHub Page](http://webge.github.io/EasyStepperDriver/) (French).
 
-<strong>Feed on Google+</strong>
---------------------
-- <a href="https://plus.google.com/collection/oaaJX" target="_blank">C# embarqué et .NetMF v4.3 : Netduino et GHI FEZ</a> (in French).
+**Feed on Google+**
+----
+* [C# embarqué et .NetMF v4.3 : Netduino et GHI FEZ](https://plus.google.com/collection/oaaJX) (French).
 
-<strong>Wiki</strong>
---------------------
-- <a href="http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:accueilnetmf" target="_blank">C# embarqué et .NetMF v4.3 pour les cartes Netduino et GHI FEZ</a> (in French).
+**Wiki**
+----
+* [C# embarqué et .NetMF v4.3 pour les cartes Netduino et GHI FEZ](http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:accueilnetmf) (French).
 
-<strong>Project site</strong>
---------------------
-- <a href ="http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:6_microtoolskit" target="_blank">MicroToolsKit library</a> (in English).
-<hr>
+**Project site**
+----
+* [MicroToolsKit library](http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:6_microtoolskit) (English).
+#
 
-<strong>Maintened by</strong> <a href="mailto:philippemariano@gmail.com">WebGE</a>
+**Maintened by** [WebGe](mailto:philippemariano@gmail.com)
