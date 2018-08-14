@@ -6,7 +6,7 @@ Source code.
 
 A **.NETMF v4.3 class** write for a **EasyDriver Shield Stepper Motor Driver Module**. 
 
-This class is also in the [MicroToolsKit]("https://www.nuget.org/packages/WEBGE.Microtoolskit/")  **library**. Download at [nuget.com]("https://www.nuget.org").
+This class is also in the [MicroToolsKit](https://www.nuget.org/packages/WEBGE.Microtoolskit/)  **library**. Download at [nuget.org](https://www.nuget.org).
 
  ![](img/nuget.JPG)
 
